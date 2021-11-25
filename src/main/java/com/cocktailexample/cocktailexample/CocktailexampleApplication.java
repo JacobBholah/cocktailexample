@@ -14,10 +14,10 @@ public class CocktailexampleApplication {
 		SpringApplication.run(CocktailexampleApplication.class, args);
 	}
 
-	@CrossOrigin("http://localhost:3000")
+	@CrossOrigin("http://localhost:8080")
 	@GetMapping("/customRoute")
 	public String myresponse() {
-		cocktail cocktail = new cocktail("Long Island", "alcoholic");
-		return cocktail.toString();
+		cocktail longisland = new cocktail("Long Island", "alcoholic");
+		return longisland.toString();
 	}
 }

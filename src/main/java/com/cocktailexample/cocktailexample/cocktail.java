@@ -1,5 +1,5 @@
 package com.cocktailexample.cocktailexample;
-import com.cocktailexample.cocktailexample.cocktailinstructions;
+import com.google.gson.Gson;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,10 +18,8 @@ public class cocktail {
     }
     ///methods///
 
-    public String toString()
-    {
-        return "name="+name+
-                "type="+type;
+    public String toString() {
+        String json = new Gson().toJson(cocktail);
+        return json;
     }
-
 }
