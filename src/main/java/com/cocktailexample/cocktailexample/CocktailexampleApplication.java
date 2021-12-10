@@ -265,7 +265,7 @@ public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findA
 		cocktailrepository.save(savedcocktail);
 		return "Saved";
 	}
-	/*@DeleteMapping("/deletecocktail")
+	@DeleteMapping("/deletecocktail")
 	public String deletecocktail
 			(
 					@RequestParam int id
@@ -276,7 +276,7 @@ public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findA
 		}
 		cocktailrepository.delete(deletedcocktail.get());
 		return "deleted";
-	}*/
+	}
 }
 	/*@CrossOrigin("http://localhost:8080")
 	@GetMapping("/customRoute")
