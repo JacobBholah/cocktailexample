@@ -54,7 +54,7 @@ public class CocktailexampleApplication {
 		ingredientrepository.save(savedingredient);
 		return "Saved";}
 
-	/*@DeleteMapping("/deleteingredient")
+	@DeleteMapping("/deleteingredient")
 	public String deleteingredient
 			(
 					@RequestParam int ingredientid
@@ -66,13 +66,12 @@ public class CocktailexampleApplication {
 		}
 		ingredientrepository.delete(deletedingredient.get());
 		return "deleted";
+	}
 
 
 
 
 
-
-	}*/
 ///glasses///
 @GetMapping("/glasses")
 public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findAll();}
@@ -87,7 +86,7 @@ public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findA
 		glassrepository.save(savedglass);
 		return "Saved";
 	}
-	/*@DeleteMapping("/deleteglass")
+	@DeleteMapping("/deleteglass")
 	public String deleteglass
 			(
 					@RequestParam int id
@@ -99,7 +98,7 @@ public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findA
 		}
 		glassrepository.delete(deletedglass.get());
 		return "deleted";
-	}*/
+	}
 
 
 
@@ -123,7 +122,7 @@ public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findA
 		garnishrepository.save(savedgarnish);
 		return "Saved";
 	}
-	/*@DeleteMapping("/deletegarnish")
+	@DeleteMapping("/deletegarnish")
 	public String deletegarnish
 			(
 					@RequestParam int id
@@ -135,7 +134,7 @@ public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findA
 		}
 		garnishrepository.delete(deletedgarnish.get());
 		return "deleted";
-	}*/
+	}
 
 
 
@@ -156,7 +155,7 @@ public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findA
 		equipmentrepository.save(savedequipment);
 		return "Saved";
 	}
-	/*@DeleteMapping("/deleteequipment")
+	@DeleteMapping("/deleteequipment")
 	public String deleteequipment
 			(
 					@RequestParam int id
@@ -168,7 +167,7 @@ public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findA
 		}
 		equipmentrepository.delete(deletedequipment.get());
 		return "deleted";
-	}*/
+	}
 
 
 
@@ -194,7 +193,7 @@ public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findA
 		instructionrepository.save(savedinstruction);
 		return "Saved";
 	}
-	/*@DeleteMapping("/deleteinstruction")
+	@DeleteMapping("/deleteinstruction")
 	public String deleteinstruction
 			(
 					@RequestParam int instructionid
@@ -206,7 +205,7 @@ public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findA
 		}
 		instructionrepository.delete(deletedinstruction.get());
 		return "deleted";
-	}*/
+	}
 
 
 
@@ -231,7 +230,7 @@ public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findA
 		cocktailinstructionsrepository.save(savedcocktailinstruction);
 		return "Saved";
 	}
-	/*@DeleteMapping("/deletecocktailinstruction")
+	@DeleteMapping("/deletecocktailinstruction")
 	public String deletecocktailinstruction
 			(
 					@RequestParam int cocktailinstructionsid
@@ -243,10 +242,7 @@ public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findA
 		}
 		cocktailinstructionsrepository.delete(deletedcocktailinstruction.get());
 		return "deleted";
-	}*/
-
-
-
+	}
 
 
 
