@@ -1,2 +1,10 @@
-package com.cocktailexample.cocktailexample;public interface cocktailinstructionsrepository {
+package com.cocktailexample.cocktailexample;
+
+import org.springframework.data.repository.CrudRepository;
+
+
+public interface cocktailinstructionsrepository extends CrudRepository <cocktailinstructions, Integer> {
+
+
+
 }

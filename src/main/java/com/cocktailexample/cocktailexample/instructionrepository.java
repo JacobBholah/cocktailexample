@@ -1,2 +1,10 @@
-package com.cocktailexample.cocktailexample;public interface instructionrepository {
+package com.cocktailexample.cocktailexample;
+
+import org.springframework.data.repository.CrudRepository;
+
+
+public interface instructionrepository extends CrudRepository <instruction, Integer> {
+
+
+
 }

@@ -1,6 +1,15 @@
 package com.cocktailexample.cocktailexample;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+
+@Entity
 public class ingredient {
+
+    @Id
+    @GeneratedValue(strategy=GenerationType.TABLE)
 
     ///attributes///
     private int ingredientid;
@@ -10,9 +19,8 @@ public class ingredient {
     private String storage;
     private String description;
     ///constructors///
-    public ingredient(int ingredientid,String name,String type,int ABV,String storage,String description)
+    public ingredient(String name,String type,int ABV,String storage,String description)
     {
-        this.ingredientid=ingredientid;
         this.name=name;
         this.type=type;
         this.ABV=ABV;
@@ -22,12 +30,29 @@ public class ingredient {
 
     ///methods///
 
-    public String toString() {
+    public ingredient(){}
+
+    public String getName(){return name;}
+    public void setName(String name){this.name=name;}
+
+    public String getType(){return type;}
+    public void setType(String type){this.type=type;}
+
+    public int getABV(){return ABV;}
+    public void setABV(int ABV){this.ABV=ABV;}
+
+    public String getStorage(){return storage;}
+    public void setStorage(String storage){this.storage=storage;}
+
+    public String getDescription(){return description;}
+    public void setDescription(String description){this.description=description;}
+
+   /* public String toString() {
         return "ingredientid="+ ingredientid+
                 "name="+ name+
                 "type="+type+
                 "ABV="+ABV+
                 "storage="+storage+
                 "description="+description;
-    }
+    }*/
 }
