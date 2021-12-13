@@ -1,4 +1,4 @@
-package com.cocktailexample.cocktailexample;
+/*package com.cocktailexample.cocktailexample;
 
 import com.amazonaws.services.secretsmanager.AWSSecretsManager;
 import com.amazonaws.services.secretsmanager.AWSSecretsManagerClientBuilder;
@@ -66,3 +66,4 @@ public class Secretclass {
         // Your code goes here.
     }
 }
+*/
