@@ -22,13 +22,15 @@ public class addcocktailStep {
 
     @When("I try to add the cocktail")
     public void i_try_to_add_the_cocktail() {
-        cocktail = true;
     }
 
     @Then("the cocktail shall appear in the database")
     public void the_cocktail_shall_appear_in_the_database() {
         assertEquals(true, cocktail);
-
+    }
+    @Given("a cocktail name is given")
+    public void a_cocktail_name_is_given() {
+        cocktail=true;
     }
 
     @Given("the cocktail already exists")
@@ -36,14 +38,14 @@ public class addcocktailStep {
         cocktail = true;
     }
 
-    @Given("no name is given")
-    public void no_name_is_given() {
-        name = false;
+    @Given("no cocktail name is given")
+    public void no_cocktail_name_is_given() {
+        cocktail = false;
     }
 
     @Then("the cocktail shall not appear in the database")
     public void the_cocktail_shall_not_appear_in_the_database() {
-        //assertEquals(false, cocktail);
+        assertEquals(false, cocktail);
     }
 
 }
