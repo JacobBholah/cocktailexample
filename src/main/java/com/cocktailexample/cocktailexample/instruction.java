@@ -18,6 +18,7 @@ public class instruction {
     ///constructors///
     public instruction(int instructionid,String description,String glass_Type,String garnish_Name)
     {
+        this.instructionid = instructionid;
         this.description = description;
     }
     ///methods///

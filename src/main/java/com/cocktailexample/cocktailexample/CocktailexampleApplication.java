@@ -36,7 +36,6 @@ public class CocktailexampleApplication {
 
 
 
-
 	///ingredients///
 	@GetMapping("/ingredients")
 	public @ResponseBody Iterable<ingredient>getAllingredients(){return ingredientrepository.findAll();}
@@ -99,11 +98,6 @@ public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findA
 		glassrepository.delete(deletedglass.get());
 		return "deleted";
 	}
-
-
-
-
-
 
 
 	///garnish///
