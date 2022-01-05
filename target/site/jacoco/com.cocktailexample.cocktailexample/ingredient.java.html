@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ingredient.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">cocktailexample</a> &gt; <a href="index.source.html" class="el_package">com.cocktailexample.cocktailexample</a> &gt; <span class="el_source">ingredient.java</span></div><h1>ingredient.java</h1><pre class="source lang-java linenums">package com.cocktailexample.cocktailexample;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+
+@Entity
+public class ingredient {
+
+    @Id
+    @GeneratedValue(strategy=GenerationType.TABLE)
+
+    ///attributes///
+    private int ingredientid;
+    private String name;
+    private String type;
+    private int ABV;
+    private String storage;
+    private String description;
+    ///constructors///
+    public ingredient(String name,String type,int ABV,String storage,String description)
+<span class="fc" id="L23">    {</span>
+<span class="fc" id="L24">        this.name=name;</span>
+<span class="fc" id="L25">        this.type=type;</span>
+<span class="fc" id="L26">        this.ABV=ABV;</span>
+<span class="fc" id="L27">        this.storage=storage;</span>
+<span class="fc" id="L28">        this.description=description;</span>
+<span class="fc" id="L29">    }</span>
+
+    ///methods///
+
+<span class="nc" id="L33">    public ingredient(){}</span>
+
+<span class="fc" id="L35">    public String getName(){return name;}</span>
+<span class="nc" id="L36">    public void setName(String name){this.name=name;}</span>
+
+<span class="nc" id="L38">    public String getType(){return type;}</span>
+<span class="nc" id="L39">    public void setType(String type){this.type=type;}</span>
+
+<span class="nc" id="L41">    public int getABV(){return ABV;}</span>
+<span class="nc" id="L42">    public void setABV(int ABV){this.ABV=ABV;}</span>
+
+<span class="nc" id="L44">    public String getStorage(){return storage;}</span>
+<span class="nc" id="L45">    public void setStorage(String storage){this.storage=storage;}</span>
+
+<span class="nc" id="L47">    public String getDescription(){return description;}</span>
+<span class="nc" id="L48">    public void setDescription(String description){this.description=description;}</span>
+
+   /* public String toString() {
+        return &quot;ingredientid=&quot;+ ingredientid+
+                &quot;name=&quot;+ name+
+                &quot;type=&quot;+type+
+                &quot;ABV=&quot;+ABV+
+                &quot;storage=&quot;+storage+
+                &quot;description=&quot;+description;
+    }*/
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>instruction.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">cocktailexample</a> &gt; <a href="index.source.html" class="el_package">com.cocktailexample.cocktailexample</a> &gt; <span class="el_source">instruction.java</span></div><h1>instruction.java</h1><pre class="source lang-java linenums">package com.cocktailexample.cocktailexample;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class instruction {
+    @Id
+    @GeneratedValue(strategy= GenerationType.TABLE)
+    ///attributes///
+    private int instructionid;
+    private String description;
+    private String glass_Type;
+    private String garnish_Name;
+
+    ///constructors///
+    public instruction(int instructionid,String description,String glass_Type,String garnish_Name)
+<span class="nc" id="L20">    {</span>
+<span class="nc" id="L21">        this.instructionid = instructionid;</span>
+<span class="nc" id="L22">        this.description = description;</span>
+<span class="nc" id="L23">    }</span>
+    ///methods///
+<span class="nc" id="L25">    public instruction(){}</span>
+
+<span class="nc" id="L27">    public int getInstructionid(){return instructionid;}</span>
+<span class="nc" id="L28">    public void setInstructionid(int instructionid){this.instructionid=instructionid;}</span>
+
+<span class="nc" id="L30">    public String getDescription(){return description;}</span>
+<span class="nc" id="L31">    public void setDescription(String description){this.description=description;}</span>
+
+    public String getGlass_Type() {
+<span class="nc" id="L34">        return glass_Type;</span>
+    }
+
+    public void setGlass_Type(String glass_Type) {
+<span class="nc" id="L38">        this.glass_Type = glass_Type;</span>
+<span class="nc" id="L39">    }</span>
+
+    public String getGarnish_Name() {
+<span class="nc" id="L42">        return garnish_Name;</span>
+    }
+
+    public void setGarnish_Name(String garnish_Name) {
+<span class="nc" id="L46">        this.garnish_Name = garnish_Name;</span>
+<span class="nc" id="L47">    }</span>
+
+    /*public String toString() {
+        return &quot;instructionid=&quot;+ instructionid+
+                &quot;description=&quot; + description;
+    }*/
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

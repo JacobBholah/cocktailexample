@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>cocktail.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">cocktailexample</a> &gt; <a href="index.source.html" class="el_package">com.cocktailexample.cocktailexample</a> &gt; <span class="el_source">cocktail.java</span></div><h1>cocktail.java</h1><pre class="source lang-java linenums">package com.cocktailexample.cocktailexample;
+import com.google.gson.Gson;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.util.ArrayList;
+import java.util.List;
+@Entity
+public class cocktail {
+    @Id
+    @GeneratedValue(strategy= GenerationType.TABLE)
+    ///attributes///
+    private int id;
+    private String name;
+    private String type;
+
+    ///constructors///
+    //private List&lt;cocktailinstructions&gt; cocktail= new ArrayList();//
+<span class="fc" id="L21">    public cocktail(String name, String type) {</span>
+<span class="fc" id="L22">        this.name=name;</span>
+<span class="fc" id="L23">        this.type=type;</span>
+        //this.cocktail.add(new cocktailinstructions(1,1));//
+<span class="fc" id="L25">    }</span>
+    ///methods///
+
+<span class="nc" id="L28">    public cocktail(){}</span>
+
+    public int getId() {
+<span class="nc" id="L31">        return id;</span>
+    }
+
+    public void setId(int id) {
+<span class="nc" id="L35">        this.id = id;</span>
+<span class="nc" id="L36">    }</span>
+
+    public String getName() {
+<span class="fc" id="L39">        return name;</span>
+    }
+
+    public void setName(String name) {
+<span class="nc" id="L43">        this.name = name;</span>
+<span class="nc" id="L44">    }</span>
+
+    public String getType() {
+<span class="nc" id="L47">        return type;</span>
+    }
+
+    public void setType(String type) {
+<span class="nc" id="L51">        this.type = type;</span>
+<span class="nc" id="L52">    }</span>
+
+
+    /*public String toString() {
+        String json = new Gson().toJson(cocktail);
+        return json;*/
+    }
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
