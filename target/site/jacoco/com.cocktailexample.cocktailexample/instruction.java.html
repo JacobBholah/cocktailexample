@@ -17,34 +17,36 @@ public class instruction {
 
     ///constructors///
     public instruction(int instructionid,String description,String glass_Type,String garnish_Name)
-<span class="nc" id="L20">    {</span>
-<span class="nc" id="L21">        this.instructionid = instructionid;</span>
-<span class="nc" id="L22">        this.description = description;</span>
-<span class="nc" id="L23">    }</span>
+<span class="fc" id="L20">    {</span>
+<span class="fc" id="L21">        this.instructionid = instructionid;</span>
+<span class="fc" id="L22">        this.description = description;</span>
+<span class="fc" id="L23">        this.glass_Type = glass_Type;</span>
+<span class="fc" id="L24">        this.garnish_Name = garnish_Name;</span>
+<span class="fc" id="L25">    }</span>
     ///methods///
-<span class="nc" id="L25">    public instruction(){}</span>
+<span class="fc" id="L27">    public instruction(){}</span>
 
-<span class="nc" id="L27">    public int getInstructionid(){return instructionid;}</span>
-<span class="nc" id="L28">    public void setInstructionid(int instructionid){this.instructionid=instructionid;}</span>
+<span class="fc" id="L29">    public int getInstructionid(){return instructionid;}</span>
+<span class="fc" id="L30">    public void setInstructionid(int instructionid){this.instructionid=instructionid;}</span>
 
-<span class="nc" id="L30">    public String getDescription(){return description;}</span>
-<span class="nc" id="L31">    public void setDescription(String description){this.description=description;}</span>
+<span class="fc" id="L32">    public String getDescription(){return description;}</span>
+<span class="fc" id="L33">    public void setDescription(String description){this.description=description;}</span>
 
     public String getGlass_Type() {
-<span class="nc" id="L34">        return glass_Type;</span>
+<span class="fc" id="L36">        return glass_Type;</span>
     }
 
     public void setGlass_Type(String glass_Type) {
-<span class="nc" id="L38">        this.glass_Type = glass_Type;</span>
-<span class="nc" id="L39">    }</span>
+<span class="fc" id="L40">        this.glass_Type = glass_Type;</span>
+<span class="fc" id="L41">    }</span>
 
     public String getGarnish_Name() {
-<span class="nc" id="L42">        return garnish_Name;</span>
+<span class="fc" id="L44">        return garnish_Name;</span>
     }
 
     public void setGarnish_Name(String garnish_Name) {
-<span class="nc" id="L46">        this.garnish_Name = garnish_Name;</span>
-<span class="nc" id="L47">    }</span>
+<span class="fc" id="L48">        this.garnish_Name = garnish_Name;</span>
+<span class="fc" id="L49">    }</span>
 
     /*public String toString() {
         return &quot;instructionid=&quot;+ instructionid+

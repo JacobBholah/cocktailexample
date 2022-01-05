@@ -1,10 +1,14 @@
+com\cocktailexample\cocktailexampletests\EquipmentTest.class
 com\cocktailexample\cocktailexampletests\GlassTest.class
 com\cocktailexample\cocktailexampletests\addequipmentStep.class
+com\cocktailexample\cocktailexampletests\CocktailinstructionsTest.class
 com\cocktailexample\cocktailexampletests\CocktailTest.class
 com\cocktailexample\cocktailexampletests\RunCucumberTest.class
+com\cocktailexample\cocktailexampletests\GarnishTest.class
 com\cocktailexample\cocktailexampletests\addingredientStep.class
 com\cocktailexample\cocktailexampletests\addcocktailStep.class
 com\cocktailexample\cocktailexampletests\IngredientTest.class
 com\cocktailexample\cocktailexampletests\addgarnishStep.class
+com\cocktailexample\cocktailexampletests\InstructionTest.class
 com\cocktailexample\cocktailexampletests\CocktailexampleApplicationTests.class
 com\cocktailexample\cocktailexampletests\addglassStep.class

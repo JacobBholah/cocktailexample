@@ -20,6 +20,8 @@ public class instruction {
     {
         this.instructionid = instructionid;
         this.description = description;
+        this.glass_Type = glass_Type;
+        this.garnish_Name = garnish_Name;
     }
     ///methods///
     public instruction(){}
