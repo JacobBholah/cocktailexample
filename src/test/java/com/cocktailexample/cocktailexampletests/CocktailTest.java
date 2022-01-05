@@ -10,8 +10,11 @@ public class CocktailTest {
     @Test
     public void testcocktail()
     {
-        cocktail testcocktail = new cocktail("Long Island","Alcoholic");
+        cocktail testcocktail = new cocktail();
+        testcocktail.setName("Long Island");
+        testcocktail.setType("Alcoholic");
         assertEquals("wrong name",testcocktail.getName(),"Long Island");
+        assertEquals("wrong type",testcocktail.getType(),"Alcoholic");
     }
 }
 

@@ -10,7 +10,10 @@ public class GlassTest {
             @Test
     public void testglass()
             {
-                glass testglass = new glass("shot",44);
+                glass testglass = new glass();
+                testglass.setType("shot");
+                testglass.setVolume(44);
                 assertEquals("wrong type",testglass.getType(),"shot");
+                assertEquals("wrong volume",testglass.getVolume(),44);
             }
 }

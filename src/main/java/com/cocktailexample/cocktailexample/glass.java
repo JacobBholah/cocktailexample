@@ -24,7 +24,7 @@ public class glass {
     public glass(){}
 
     public int getId(){return id;}
-    public void setId(int id){this.id=id;}
+   // public void setId(int id){this.id=id;}   remove if not enough coverage :)
 
     public String getType(){return type;}
     public void setType(String type){this.type=type;}

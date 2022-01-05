@@ -1,10 +1,10 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
 cocktailexample,com.cocktailexample.cocktailexample,equipment,26,0,0,0,9,0,6,0,6,0
-cocktailexample,com.cocktailexample.cocktailexample,ingredient,35,21,0,0,10,8,10,2,10,2
+cocktailexample,com.cocktailexample.cocktailexample,ingredient,18,38,0,0,7,11,1,11,1,11
 cocktailexample,com.cocktailexample.cocktailexample,cocktailinstructions,52,0,0,0,20,0,11,0,11,0
 cocktailexample,com.cocktailexample.cocktailexample,CocktailexampleApplication,268,0,14,0,66,0,30,0,23,0
 cocktailexample,com.cocktailexample.cocktailexample,garnish,36,0,0,0,13,0,8,0,8,0
 cocktailexample,com.cocktailexample.cocktailexample,ingredientinstructions,3,0,0,0,1,0,1,0,1,0
-cocktailexample,com.cocktailexample.cocktailexample,cocktail,21,12,0,0,9,5,6,2,6,2
-cocktailexample,com.cocktailexample.cocktailexample,glass,21,12,0,0,6,5,6,2,6,2
+cocktailexample,com.cocktailexample.cocktailexample,cocktail,16,17,0,0,7,7,3,5,3,5
+cocktailexample,com.cocktailexample.cocktailexample,glass,12,17,0,0,5,5,2,5,2,5
 cocktailexample,com.cocktailexample.cocktailexample,instruction,40,0,0,0,15,0,10,0,10,0
