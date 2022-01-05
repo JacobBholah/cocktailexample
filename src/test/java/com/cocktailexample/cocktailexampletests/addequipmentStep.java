@@ -1,4 +1,4 @@
-package com.cocktailexample.cocktailexample;
+package com.cocktailexample.cocktailexampletests;
 
 //import cucumber.api.java.en.Given;
 //import cucumber.api.java.en.Then;

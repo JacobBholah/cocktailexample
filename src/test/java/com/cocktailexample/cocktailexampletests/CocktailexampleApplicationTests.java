@@ -1,14 +1,7 @@
-/*package com.cocktailexample.cocktailexample;
-
-import org.junit.jupiter.api.Test;
+package com.cocktailexample.cocktailexampletests;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class CocktailexampleApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
-
 }
-*/
