@@ -21,5 +21,12 @@ public class IngredientTest {
         assertEquals("wrong ABV",testingredient.getABV(),40);
         assertEquals("wrong storage",testingredient.getStorage(),"fridge");
         assertEquals("wrong description",testingredient.getDescription(),"description");
+
+        ingredient testingredient2 = new ingredient("rum","alcohol",40,"fridge","description");
+        assertEquals("wrong name",testingredient2.getName(),"rum");
+        assertEquals("wrong type",testingredient2.getType(),"alcohol");
+        assertEquals("wrong ABV",testingredient2.getABV(),40);
+        assertEquals("wrong storage",testingredient2.getStorage(),"fridge");
+        assertEquals("wrong description",testingredient2.getDescription(),"description");
     }
 }
