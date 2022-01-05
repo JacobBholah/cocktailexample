@@ -15,5 +15,10 @@ public class GlassTest {
                 testglass.setVolume(44);
                 assertEquals("wrong type",testglass.getType(),"shot");
                 assertEquals("wrong volume",testglass.getVolume(),44);
+
+                glass testglass2 = new glass("highball",240);
+                assertEquals("wrong type",testglass2.getType(),"highball");
+                assertEquals("wrong volume",testglass2.getVolume(),240);
+
             }
 }
