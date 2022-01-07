@@ -1,17 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-07T14:26:46 GMT" name="Surefire suite" finished-at="2022-01-07T14:26:47 GMT" duration-ms="1041">
+  <suite started-at="2022-01-07T17:08:13 GMT" name="Surefire suite" finished-at="2022-01-07T17:08:14 GMT" duration-ms="1107">
     <groups>
     </groups>
-    <test started-at="2022-01-07T14:26:46 GMT" name="Surefire test" finished-at="2022-01-07T14:26:47 GMT" duration-ms="1041">
+    <test started-at="2022-01-07T17:08:13 GMT" name="Surefire test" finished-at="2022-01-07T17:08:14 GMT" duration-ms="1107">
       <class name="com.cocktailexample.cocktailexampletests.MockitoTest">
-        <test-method signature="testaddingredient()" started-at="2022-01-07T14:26:46 GMT" name="testaddingredient" finished-at="2022-01-07T14:26:47 GMT" duration-ms="681" status="PASS">
+        <test-method signature="testaddglass()" started-at="2022-01-07T17:08:13 GMT" name="testaddglass" finished-at="2022-01-07T17:08:14 GMT" duration-ms="713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testaddglass -->
+        <test-method signature="testaddequipment()" started-at="2022-01-07T17:08:13 GMT" name="testaddequipment" finished-at="2022-01-07T17:08:14 GMT" duration-ms="717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testaddequipment -->
+        <test-method signature="testgetAllgarnish()" started-at="2022-01-07T17:08:13 GMT" name="testgetAllgarnish" finished-at="2022-01-07T17:08:14 GMT" duration-ms="719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetAllgarnish -->
+        <test-method signature="testgetAllcocktails()" started-at="2022-01-07T17:08:13 GMT" name="testgetAllcocktails" finished-at="2022-01-07T17:08:14 GMT" duration-ms="716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetAllcocktails -->
+        <test-method signature="testaddingredient()" started-at="2022-01-07T17:08:13 GMT" name="testaddingredient" finished-at="2022-01-07T17:08:14 GMT" duration-ms="710" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testaddingredient -->
-        <test-method signature="testgetAllingreients()" started-at="2022-01-07T14:26:46 GMT" name="testgetAllingreients" finished-at="2022-01-07T14:26:47 GMT" duration-ms="681" status="PASS">
+        <test-method signature="testgetAllcocktailinstructions()" started-at="2022-01-07T17:08:13 GMT" name="testgetAllcocktailinstructions" finished-at="2022-01-07T17:08:14 GMT" duration-ms="715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetAllcocktailinstructions -->
+        <test-method signature="testaddcocktail()" started-at="2022-01-07T17:08:13 GMT" name="testaddcocktail" finished-at="2022-01-07T17:08:14 GMT" duration-ms="718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testaddcocktail -->
+        <test-method signature="testaddinstruction()" started-at="2022-01-07T17:08:13 GMT" name="testaddinstruction" finished-at="2022-01-07T17:08:14 GMT" duration-ms="712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testaddinstruction -->
+        <test-method signature="testgetAllequipment()" started-at="2022-01-07T17:08:13 GMT" name="testgetAllequipment" finished-at="2022-01-07T17:08:14 GMT" duration-ms="706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetAllequipment -->
+        <test-method signature="testaddcocktailinstruction()" started-at="2022-01-07T17:08:13 GMT" name="testaddcocktailinstruction" finished-at="2022-01-07T17:08:14 GMT" duration-ms="714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testaddcocktailinstruction -->
+        <test-method signature="testaddgarnish()" started-at="2022-01-07T17:08:13 GMT" name="testaddgarnish" finished-at="2022-01-07T17:08:14 GMT" duration-ms="722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testaddgarnish -->
+        <test-method signature="testgetAllinstructions()" started-at="2022-01-07T17:08:13 GMT" name="testgetAllinstructions" finished-at="2022-01-07T17:08:14 GMT" duration-ms="720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetAllinstructions -->
+        <test-method signature="testgetAllglasses()" started-at="2022-01-07T17:08:13 GMT" name="testgetAllglasses" finished-at="2022-01-07T17:08:14 GMT" duration-ms="719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetAllglasses -->
+        <test-method signature="testgetAllingreients()" started-at="2022-01-07T17:08:13 GMT" name="testgetAllingreients" finished-at="2022-01-07T17:08:14 GMT" duration-ms="719" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testgetAllingreients -->

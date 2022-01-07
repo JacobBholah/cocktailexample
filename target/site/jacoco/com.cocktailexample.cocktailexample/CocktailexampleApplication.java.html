@@ -84,7 +84,7 @@ public class CocktailexampleApplication {
 
 ///glasses///
 @GetMapping(&quot;/glasses&quot;)
-<span class="nc" id="L87">public @ResponseBody Iterable&lt;glass&gt;getAllglasses(){return glassrepository.findAll();}</span>
+<span class="fc" id="L87">public @ResponseBody Iterable&lt;glass&gt;getAllglasses(){return glassrepository.findAll();}</span>
 
 	@PostMapping(&quot;/addglass&quot;)
 	public @ResponseBody String addAglass
@@ -92,9 +92,9 @@ public class CocktailexampleApplication {
 					@RequestParam String type,
 					@RequestParam int volume
 			){
-<span class="nc" id="L95">		glass savedglass = new glass(type,volume);</span>
-<span class="nc" id="L96">		glassrepository.save(savedglass);</span>
-<span class="nc" id="L97">		return &quot;Saved&quot;;</span>
+<span class="fc" id="L95">		glass savedglass = new glass(type,volume);</span>
+<span class="fc" id="L96">		glassrepository.save(savedglass);</span>
+<span class="fc" id="L97">		return &quot;Saved&quot;;</span>
 	}
 	@DeleteMapping(&quot;/deleteglass&quot;)
 	public String deleteglass
@@ -113,7 +113,7 @@ public class CocktailexampleApplication {
 
 	///garnish///
 	@GetMapping(&quot;/garnishes&quot;)
-<span class="nc" id="L116">	public @ResponseBody Iterable&lt;garnish&gt;getAllgarnishs(){return garnishrepository.findAll();}</span>
+<span class="fc" id="L116">	public @ResponseBody Iterable&lt;garnish&gt;getAllgarnishs(){return garnishrepository.findAll();}</span>
 
 	@PostMapping(&quot;/addgarnish&quot;)
 	public @ResponseBody String addAgarnish
@@ -123,9 +123,9 @@ public class CocktailexampleApplication {
 					@RequestParam String type
 
 			){
-<span class="nc" id="L126">		garnish savedgarnish = new garnish(id,name,type);</span>
-<span class="nc" id="L127">		garnishrepository.save(savedgarnish);</span>
-<span class="nc" id="L128">		return &quot;Saved&quot;;</span>
+<span class="fc" id="L126">		garnish savedgarnish = new garnish(id,name,type);</span>
+<span class="fc" id="L127">		garnishrepository.save(savedgarnish);</span>
+<span class="fc" id="L128">		return &quot;Saved&quot;;</span>
 	}
 	@DeleteMapping(&quot;/deletegarnish&quot;)
 	public String deletegarnish
@@ -147,7 +147,7 @@ public class CocktailexampleApplication {
 
 	///equipment///
 	@GetMapping(&quot;/equipment&quot;)
-<span class="nc" id="L150">	public @ResponseBody Iterable&lt;equipment&gt;getAllequipment(){return equipmentrepository.findAll();}</span>
+<span class="fc" id="L150">	public @ResponseBody Iterable&lt;equipment&gt;getAllequipment(){return equipmentrepository.findAll();}</span>
 
 	@PostMapping(&quot;/addequipment&quot;)
 	public @ResponseBody String addequipment
@@ -156,9 +156,9 @@ public class CocktailexampleApplication {
 					@RequestParam String type
 
 			){
-<span class="nc" id="L159">		equipment savedequipment = new equipment(name,type);</span>
-<span class="nc" id="L160">		equipmentrepository.save(savedequipment);</span>
-<span class="nc" id="L161">		return &quot;Saved&quot;;</span>
+<span class="fc" id="L159">		equipment savedequipment = new equipment(name,type);</span>
+<span class="fc" id="L160">		equipmentrepository.save(savedequipment);</span>
+<span class="fc" id="L161">		return &quot;Saved&quot;;</span>
 	}
 	@DeleteMapping(&quot;/deleteequipment&quot;)
 	public String deleteequipment
@@ -181,7 +181,7 @@ public class CocktailexampleApplication {
 
 	///instruction///
 	@GetMapping(&quot;/instructions&quot;)
-<span class="nc" id="L184">	public @ResponseBody Iterable&lt;instruction&gt;getAllinstructions(){return instructionrepository.findAll();}</span>
+<span class="fc" id="L184">	public @ResponseBody Iterable&lt;instruction&gt;getAllinstructions(){return instructionrepository.findAll();}</span>
 
 	@PostMapping(&quot;/addinstruction&quot;)
 	public @ResponseBody String addinstruction
@@ -194,9 +194,9 @@ public class CocktailexampleApplication {
 
 
 			){
-<span class="nc" id="L197">		instruction savedinstruction = new instruction(instructionid,description,glass_Type,garnish_Name);</span>
-<span class="nc" id="L198">		instructionrepository.save(savedinstruction);</span>
-<span class="nc" id="L199">		return &quot;Saved&quot;;</span>
+<span class="fc" id="L197">		instruction savedinstruction = new instruction(instructionid,description,glass_Type,garnish_Name);</span>
+<span class="fc" id="L198">		instructionrepository.save(savedinstruction);</span>
+<span class="fc" id="L199">		return &quot;Saved&quot;;</span>
 	}
 	@DeleteMapping(&quot;/deleteinstruction&quot;)
 	public String deleteinstruction
@@ -219,7 +219,7 @@ public class CocktailexampleApplication {
 
 	///cocktail instructions///
 	@GetMapping(&quot;/cocktailinstructions&quot;)
-<span class="nc" id="L222">	public @ResponseBody Iterable&lt;cocktailinstructions&gt;getAllcocktailinstructions(){return cocktailinstructionsrepository.findAll();}</span>
+<span class="fc" id="L222">	public @ResponseBody Iterable&lt;cocktailinstructions&gt;getAllcocktailinstructions(){return cocktailinstructionsrepository.findAll();}</span>
 
 	@PostMapping(&quot;/addcocktailinstruction&quot;)
 	public @ResponseBody String addcocktailinstruction
@@ -231,9 +231,9 @@ public class CocktailexampleApplication {
 
 
 			){
-<span class="nc" id="L234">		cocktailinstructions savedcocktailinstruction = new cocktailinstructions(cocktailinstructionid,stepnumber,instructionid,cocktail_Name);</span>
-<span class="nc" id="L235">		cocktailinstructionsrepository.save(savedcocktailinstruction);</span>
-<span class="nc" id="L236">		return &quot;Saved&quot;;</span>
+<span class="fc" id="L234">		cocktailinstructions savedcocktailinstruction = new cocktailinstructions(cocktailinstructionid,stepnumber,instructionid,cocktail_Name);</span>
+<span class="fc" id="L235">		cocktailinstructionsrepository.save(savedcocktailinstruction);</span>
+<span class="fc" id="L236">		return &quot;Saved&quot;;</span>
 	}
 	@DeleteMapping(&quot;/deletecocktailinstruction&quot;)
 	public String deletecocktailinstruction
@@ -253,7 +253,7 @@ public class CocktailexampleApplication {
 
 	///cocktail///
 	@GetMapping(&quot;/cocktails&quot;)
-<span class="nc" id="L256">	public @ResponseBody Iterable&lt;cocktail&gt;getAllcocktails(){return cocktailrepository.findAll();}</span>
+<span class="fc" id="L256">	public @ResponseBody Iterable&lt;cocktail&gt;getAllcocktails(){return cocktailrepository.findAll();}</span>
 
 	@PostMapping(&quot;/addcocktail&quot;)
 	public @ResponseBody String addcocktail
@@ -262,9 +262,9 @@ public class CocktailexampleApplication {
 					@RequestParam String type
 
 			){
-<span class="nc" id="L265">		cocktail savedcocktail = new cocktail(name,type);</span>
-<span class="nc" id="L266">		cocktailrepository.save(savedcocktail);</span>
-<span class="nc" id="L267">		return &quot;Saved&quot;;</span>
+<span class="fc" id="L265">		cocktail savedcocktail = new cocktail(name,type);</span>
+<span class="fc" id="L266">		cocktailrepository.save(savedcocktail);</span>
+<span class="fc" id="L267">		return &quot;Saved&quot;;</span>
 	}
 	@DeleteMapping(&quot;/deletecocktail&quot;)
 	public String deletecocktail
