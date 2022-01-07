@@ -10,6 +10,7 @@ import java.util.Optional;
 
 @SpringBootApplication
 @RestController
+@CrossOrigin
 @RequestMapping("/cocktails")
 public class CocktailexampleApplication {
 
@@ -27,6 +28,16 @@ public class CocktailexampleApplication {
 	private cocktailinstructionsrepository cocktailinstructionsrepository;
 	@Autowired
 	private cocktailrepository cocktailrepository;
+
+	public CocktailexampleApplication(com.cocktailexample.cocktailexample.ingredientrepository ingredientrepository, com.cocktailexample.cocktailexample.glassrepository glassrepository, com.cocktailexample.cocktailexample.garnishrepository garnishrepository, com.cocktailexample.cocktailexample.equipmentrepository equipmentrepository, com.cocktailexample.cocktailexample.instructionrepository instructionrepository, com.cocktailexample.cocktailexample.cocktailinstructionsrepository cocktailinstructionsrepository, com.cocktailexample.cocktailexample.cocktailrepository cocktailrepository) {
+		this.ingredientrepository = ingredientrepository;
+		this.glassrepository = glassrepository;
+		this.garnishrepository = garnishrepository;
+		this.equipmentrepository = equipmentrepository;
+		this.instructionrepository = instructionrepository;
+		this.cocktailinstructionsrepository = cocktailinstructionsrepository;
+		this.cocktailrepository = cocktailrepository;
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(CocktailexampleApplication.class, args);

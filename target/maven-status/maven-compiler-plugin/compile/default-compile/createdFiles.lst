@@ -10,7 +10,6 @@ com\cocktailexample\cocktailexample\ingredient.class
 com\cocktailexample\cocktailexample\instruction.class
 com\cocktailexample\cocktailexample\ingredientrepository.class
 com\cocktailexample\cocktailexample\glass.class
-com\cocktailexample\cocktailexample\ingredientinstructions.class
 com\cocktailexample\cocktailexample\cocktailinstructionsrepository.class
 com\cocktailexample\cocktailexample\equipment.class
 com\cocktailexample\cocktailexample\garnishrepository.class

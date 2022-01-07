@@ -2,52 +2,52 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-05T14:22:06 GMT" name="Surefire suite" finished-at="2022-01-05T14:22:06 GMT" duration-ms="64">
+  <suite started-at="2022-01-07T12:48:30 GMT" name="Surefire suite" finished-at="2022-01-07T12:48:30 GMT" duration-ms="61">
     <groups>
     </groups>
-    <test started-at="2022-01-05T14:22:06 GMT" name="Surefire test" finished-at="2022-01-05T14:22:06 GMT" duration-ms="64">
-      <class name="com.cocktailexample.cocktailexampletests.GarnishTest">
-        <test-method signature="testgarnish()[pri:0, instance:com.cocktailexample.cocktailexampletests.GarnishTest@6b00f608]" started-at="2022-01-05T14:22:06 GMT" name="testgarnish" finished-at="2022-01-05T14:22:06 GMT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testgarnish -->
-      </class> <!-- com.cocktailexample.cocktailexampletests.GarnishTest -->
+    <test started-at="2022-01-07T12:48:30 GMT" name="Surefire test" finished-at="2022-01-07T12:48:30 GMT" duration-ms="61">
       <class name="com.cocktailexample.cocktailexampletests.GlassTest">
-        <test-method signature="testglass()[pri:0, instance:com.cocktailexample.cocktailexampletests.GlassTest@2f17e30d]" started-at="2022-01-05T14:22:06 GMT" name="testglass" finished-at="2022-01-05T14:22:06 GMT" duration-ms="0" status="PASS">
+        <test-method signature="testglass()[pri:0, instance:com.cocktailexample.cocktailexampletests.GlassTest@26bab2f1]" started-at="2022-01-07T12:48:30 GMT" name="testglass" finished-at="2022-01-07T12:48:30 GMT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testglass -->
       </class> <!-- com.cocktailexample.cocktailexampletests.GlassTest -->
+      <class name="com.cocktailexample.cocktailexampletests.GarnishTest">
+        <test-method signature="testgarnish()[pri:0, instance:com.cocktailexample.cocktailexampletests.GarnishTest@42f8285e]" started-at="2022-01-07T12:48:30 GMT" name="testgarnish" finished-at="2022-01-07T12:48:30 GMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgarnish -->
+      </class> <!-- com.cocktailexample.cocktailexampletests.GarnishTest -->
       <class name="com.cocktailexample.cocktailexampletests.InstructionTest">
-        <test-method signature="testinstruction()[pri:0, instance:com.cocktailexample.cocktailexampletests.InstructionTest@1d131e1b]" started-at="2022-01-05T14:22:06 GMT" name="testinstruction" finished-at="2022-01-05T14:22:06 GMT" duration-ms="1" status="PASS">
+        <test-method signature="testinstruction()[pri:0, instance:com.cocktailexample.cocktailexampletests.InstructionTest@68ead359]" started-at="2022-01-07T12:48:30 GMT" name="testinstruction" finished-at="2022-01-07T12:48:30 GMT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testinstruction -->
       </class> <!-- com.cocktailexample.cocktailexampletests.InstructionTest -->
       <class name="com.cocktailexample.cocktailexampletests.IngredientTest">
-        <test-method signature="testingredient()[pri:0, instance:com.cocktailexample.cocktailexampletests.IngredientTest@3e821657]" started-at="2022-01-05T14:22:06 GMT" name="testingredient" finished-at="2022-01-05T14:22:06 GMT" duration-ms="0" status="PASS">
+        <test-method signature="testingredient()[pri:0, instance:com.cocktailexample.cocktailexampletests.IngredientTest@3724af13]" started-at="2022-01-07T12:48:30 GMT" name="testingredient" finished-at="2022-01-07T12:48:30 GMT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testingredient -->
       </class> <!-- com.cocktailexample.cocktailexampletests.IngredientTest -->
       <class name="com.cocktailexample.cocktailexampletests.CocktailinstructionsTest">
-        <test-method signature="testcocktailinstructions()[pri:0, instance:com.cocktailexample.cocktailexampletests.CocktailinstructionsTest@fc258b1]" started-at="2022-01-05T14:22:06 GMT" name="testcocktailinstructions" finished-at="2022-01-05T14:22:06 GMT" duration-ms="10" status="PASS">
+        <test-method signature="testcocktailinstructions()[pri:0, instance:com.cocktailexample.cocktailexampletests.CocktailinstructionsTest@ebb6851]" started-at="2022-01-07T12:48:30 GMT" name="testcocktailinstructions" finished-at="2022-01-07T12:48:30 GMT" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcocktailinstructions -->
       </class> <!-- com.cocktailexample.cocktailexampletests.CocktailinstructionsTest -->
-      <class name="com.cocktailexample.cocktailexampletests.EquipmentTest">
-        <test-method signature="testequipment()[pri:0, instance:com.cocktailexample.cocktailexampletests.EquipmentTest@5e1fa5b1]" started-at="2022-01-05T14:22:06 GMT" name="testequipment" finished-at="2022-01-05T14:22:06 GMT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testequipment -->
-      </class> <!-- com.cocktailexample.cocktailexampletests.EquipmentTest -->
       <class name="com.cocktailexample.cocktailexampletests.CocktailTest">
-        <test-method signature="testcocktail()[pri:0, instance:com.cocktailexample.cocktailexampletests.CocktailTest@25a6944c]" started-at="2022-01-05T14:22:06 GMT" name="testcocktail" finished-at="2022-01-05T14:22:06 GMT" duration-ms="1" status="PASS">
+        <test-method signature="testcocktail()[pri:0, instance:com.cocktailexample.cocktailexampletests.CocktailTest@65fe9e33]" started-at="2022-01-07T12:48:30 GMT" name="testcocktail" finished-at="2022-01-07T12:48:30 GMT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcocktail -->
       </class> <!-- com.cocktailexample.cocktailexampletests.CocktailTest -->
+      <class name="com.cocktailexample.cocktailexampletests.EquipmentTest">
+        <test-method signature="testequipment()[pri:0, instance:com.cocktailexample.cocktailexampletests.EquipmentTest@18bc345]" started-at="2022-01-07T12:48:30 GMT" name="testequipment" finished-at="2022-01-07T12:48:30 GMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testequipment -->
+      </class> <!-- com.cocktailexample.cocktailexampletests.EquipmentTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

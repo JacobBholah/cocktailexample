@@ -1,4 +1,5 @@
 com\cocktailexample\cocktailexampletests\EquipmentTest.class
+com\cocktailexample\cocktailexampletests\MockitoTest.class
 com\cocktailexample\cocktailexampletests\GlassTest.class
 com\cocktailexample\cocktailexampletests\addequipmentStep.class
 com\cocktailexample\cocktailexampletests\CocktailinstructionsTest.class
