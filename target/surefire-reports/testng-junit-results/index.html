@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">29 methods,   29 passed</span>
+                    <span class="method-stats">28 methods,   28 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,11 +102,6 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content passed suite-Surefire_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.cocktailexample.cocktailexampletests.PageTest" class="method navigator-link" hash-for-method="pagesTest">pagesTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.cocktailexample.cocktailexampletests.MockitoTest" class="method navigator-link" hash-for-method="testaddcocktail">testaddcocktail</a> <!-- method navigator-link -->
@@ -259,21 +254,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.cocktailexample.cocktailexampletests.PageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="pagesTest">
-                  </a> <!-- pagesTest -->
-                  <span class="method-name">pagesTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -490,7 +470,6 @@
   &lt;test junit=&quot;true&quot; thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.cocktailexample.cocktailexampletests.MockitoTest&quot;/&gt;
-      &lt;class name=&quot;com.cocktailexample.cocktailexampletests.PageTest&quot;/&gt;
       &lt;class name=&quot;com.cocktailexample.cocktailexampletests.RunCucumberTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
@@ -505,7 +484,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (3 classes)</span>
+                <span class="test-name">Surefire test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -531,128 +510,124 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(29);
+data.addRows(28);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'pagesTest')
-data.setCell(0, 2, 'com.cocktailexample.cocktailexampletests.PageTest')
-data.setCell(0, 3, 3381);
+data.setCell(0, 1, 'testaddgarnish')
+data.setCell(0, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
+data.setCell(0, 3, 903);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testaddgarnish')
+data.setCell(1, 1, 'testdeletenoglass')
 data.setCell(1, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(1, 3, 691);
+data.setCell(1, 3, 902);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testdeletenoequipment')
 data.setCell(2, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(2, 3, 691);
+data.setCell(2, 3, 902);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testdeletenoglass')
+data.setCell(3, 1, 'testdeletecocktail')
 data.setCell(3, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(3, 3, 690);
+data.setCell(3, 3, 901);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testdeleteinstruction')
 data.setCell(4, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(4, 3, 689);
+data.setCell(4, 3, 901);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testdeletecocktail')
+data.setCell(5, 1, 'testdeleteglass')
 data.setCell(5, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(5, 3, 689);
+data.setCell(5, 3, 900);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testdeleteglass')
+data.setCell(6, 1, 'testdeletenococktail')
 data.setCell(6, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(6, 3, 688);
+data.setCell(6, 3, 899);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'testgetAllinstructions')
 data.setCell(7, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(7, 3, 687);
+data.setCell(7, 3, 899);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testdeletenococktail')
+data.setCell(8, 1, 'testdeleteequipment')
 data.setCell(8, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(8, 3, 686);
+data.setCell(8, 3, 898);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testdeleteequipment')
+data.setCell(9, 1, 'testgetAllglasses')
 data.setCell(9, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(9, 3, 685);
+data.setCell(9, 3, 897);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testgetAllglasses')
+data.setCell(10, 1, 'testdeleteingredient')
 data.setCell(10, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(10, 3, 684);
+data.setCell(10, 3, 896);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testdeleteingredient')
+data.setCell(11, 1, 'testgetAllingreients')
 data.setCell(11, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(11, 3, 683);
+data.setCell(11, 3, 895);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'testgetAllingreients')
+data.setCell(12, 1, 'testgetAllgarnish')
 data.setCell(12, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(12, 3, 682);
+data.setCell(12, 3, 894);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'testgetAllgarnish')
+data.setCell(13, 1, 'testaddcocktail')
 data.setCell(13, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(13, 3, 681);
+data.setCell(13, 3, 893);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'testaddcocktail')
+data.setCell(14, 1, 'testaddequipment')
 data.setCell(14, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(14, 3, 680);
+data.setCell(14, 3, 893);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'testaddequipment')
+data.setCell(15, 1, 'testdeletenococktailinstruction')
 data.setCell(15, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(15, 3, 680);
+data.setCell(15, 3, 892);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'testdeletenococktailinstruction')
+data.setCell(16, 1, 'testdeletenoinstruction')
 data.setCell(16, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(16, 3, 679);
+data.setCell(16, 3, 891);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'testdeletenoinstruction')
+data.setCell(17, 1, 'testgetAllcocktails')
 data.setCell(17, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(17, 3, 678);
+data.setCell(17, 3, 890);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'testgetAllcocktails')
+data.setCell(18, 1, 'testgetAllcocktailinstructions')
 data.setCell(18, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(18, 3, 677);
+data.setCell(18, 3, 889);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'testgetAllcocktailinstructions')
+data.setCell(19, 1, 'testaddglass')
 data.setCell(19, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(19, 3, 676);
+data.setCell(19, 3, 889);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'testaddcocktailinstruction')
 data.setCell(20, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(20, 3, 676);
+data.setCell(20, 3, 889);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'testaddglass')
+data.setCell(21, 1, 'testdeletegarnish')
 data.setCell(21, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(21, 3, 674);
+data.setCell(21, 3, 888);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'testdeletegarnish')
+data.setCell(22, 1, 'testaddinstruction')
 data.setCell(22, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(22, 3, 673);
+data.setCell(22, 3, 886);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'testaddinstruction')
+data.setCell(23, 1, 'testaddingredient')
 data.setCell(23, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(23, 3, 672);
+data.setCell(23, 3, 885);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'testaddingredient')
+data.setCell(24, 1, 'testdeletenoingredient')
 data.setCell(24, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(24, 3, 671);
+data.setCell(24, 3, 884);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'testdeletenoingredient')
+data.setCell(25, 1, 'testdeletenogarnish')
 data.setCell(25, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(25, 3, 670);
+data.setCell(25, 3, 883);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'testdeletenogarnish')
+data.setCell(26, 1, 'testdeletecocktailinstruction')
 data.setCell(26, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(26, 3, 669);
+data.setCell(26, 3, 882);
 data.setCell(27, 0, 27)
 data.setCell(27, 1, 'testgetAllequipment')
 data.setCell(27, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(27, 3, 667);
-data.setCell(28, 0, 28)
-data.setCell(28, 1, 'testdeletecocktailinstruction')
-data.setCell(28, 2, 'com.cocktailexample.cocktailexampletests.MockitoTest')
-data.setCell(28, 3, 666);
+data.setCell(27, 3, 882);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -680,123 +655,116 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.cocktailexample.cocktailexampletests.MockitoTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testaddglass</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testdeletenoingredient</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testgetAllcocktails</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">testdeletecocktailinstruction</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testgetAllcocktailinstructions</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testgetAllequipment</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testaddcocktailinstruction</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testaddinstruction</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">testdeletenoingredient</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testdeletenogarnish</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testdeletenoinstruction</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">testgetAllequipment</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testaddglass</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testaddinstruction</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testaddcocktailinstruction</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testaddingredient</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testaddequipment</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testdeletenococktailinstruction</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testdeletegarnish</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testdeleteinstruction</span>
                 <span class="method-start">1 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testdeletenococktail</span>
-                <span class="method-start">1 ms</span>
+                <span class="method-name">testdeletenoinstruction</span>
+                <span class="method-start">2 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testgetAllgarnish</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testgetAllingreients</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testgetAllinstructions</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testdeleteequipment</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testdeletenoglass</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testaddgarnish</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testdeleteglass</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testaddcocktail</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testdeleteingredient</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testdeletenoequipment</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testgetAllglasses</span>
-                <span class="method-start">1 ms</span>
+                <span class="method-name">testgetAllcocktailinstructions</span>
+                <span class="method-start">2 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testdeletecocktail</span>
-                <span class="method-start">1 ms</span>
+                <span class="method-start">2 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.cocktailexample.cocktailexampletests.PageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">pagesTest</span>
-                <span class="method-start">694 ms</span>
+                <span class="method-name">testgetAllglasses</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testdeleteequipment</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testgetAllcocktails</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testgetAllingreients</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testdeletenococktail</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testgetAllinstructions</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testaddcocktail</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testdeleteglass</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testdeletenococktailinstruction</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testdeleteingredient</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testaddequipment</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testgetAllgarnish</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testdeletenoglass</span>
+                <span class="method-start">3 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testaddgarnish</span>
+                <span class="method-start">3 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testdeleteinstruction</span>
+                <span class="method-start">3 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testdeletenoequipment</span>
+                <span class="method-start">3 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
