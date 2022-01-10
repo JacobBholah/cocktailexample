@@ -4,6 +4,7 @@ package com.cocktailexample.cocktailexampletests;
 import com.cocktailexample.cocktailexample.*;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
@@ -15,6 +16,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 
 
+import java.util.Optional;
+
+import static org.mockito.ArgumentMatchers.anyInt;
+import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
 import static org.testng.AssertJUnit.assertEquals;
 
@@ -79,15 +84,40 @@ public class MockitoTest {
 
     }
 
-//    @Test
-//    public void testdeleteingredient(){
+    @Test
+    public void testdeleteingredient(){
+        ingredient savedingredient = new ingredient();
+//        savedingredient.setName("vodka");
+//        savedingredient.setType("alcohol");
+//        savedingredient.setABV(40);
+//        savedingredient.setStorage("fridge");
+//        savedingredient.setDescription("it vodka");
 //
-//        String expected = "deleted";
 //
-//        String actual = cocktailexampleApplication.deleteingredient(ingredient.)
-//    }
+//        cocktailexampleApplication.addAningredient(savedingredient.getName(),savedingredient.getType(),savedingredient.getABV(),savedingredient.getStorage(),savedingredient.getDescription());
+//        System.out.println(savedingredient.getIngredientid());
+        given(ingredientrepository.findById(savedingredient.getIngredientid())).willReturn(Optional.of(savedingredient));
+        String expected = "deleted";
 
+        String actual = cocktailexampleApplication.deleteingredient(savedingredient.getIngredientid());
 
+//        ArgumentCaptor<ingredient> ingredientArgumentCaptor = ArgumentCaptor.forClass(ingredient.class);
+//
+
+//
+//        ingredient capturedingredient = ingredientArgumentCaptor.getValue();
+//
+//        assertEquals("wrong name",null,capturedingredient.getName());
+        Assertions.assertEquals(expected,actual);
+        verify(ingredientrepository).deleteById(savedingredient.getIngredientid());
+    }
+
+    @Test
+    public void testdeletenoingredient(){
+        String expected = "no ingredient";
+        String actual = cocktailexampleApplication.deleteingredient(anyInt());
+        Assertions.assertEquals(expected,actual);
+    }
 
     @Test
     public void testgetAllglasses()
@@ -119,6 +149,24 @@ public class MockitoTest {
         assertEquals("wrong message",expected,actual);
 
     }
+    @Test
+    public void testdeleteglass(){
+        glass savedglass = new glass();
+
+        given(glassrepository.findById(savedglass.getId())).willReturn(Optional.of(savedglass));
+
+        String expected = "deleted";
+        String actual = cocktailexampleApplication.deleteglass(savedglass.getId());
+
+        Assertions.assertEquals(expected,actual);
+        verify(glassrepository).deleteById(savedglass.getId());
+    }
+
+    @Test
+    public void testdeletenoglass(){
+        String expected = "no glass";
+        String actual = cocktailexampleApplication.deleteglass(anyInt());
+        Assertions.assertEquals(expected,actual);}
 
     @Test
     public void testgetAllgarnish()
@@ -153,6 +201,26 @@ public class MockitoTest {
         assertEquals("wrong message",expected,actual);
 
     }
+
+    @Test
+    public void testdeletegarnish(){
+        garnish savedgarnish = new garnish();
+
+        given(garnishrepository.findById(savedgarnish.getId())).willReturn(Optional.of(savedgarnish));
+
+        String expected = "deleted";
+        String actual = cocktailexampleApplication.deletegarnish(savedgarnish.getId());
+
+        Assertions.assertEquals(expected,actual);
+        verify(garnishrepository).deleteById(savedgarnish.getId());
+    }
+
+    @Test
+    public void testdeletenogarnish(){
+        String expected = "no garnish";
+        String actual = cocktailexampleApplication.deletegarnish(anyInt());
+        Assertions.assertEquals(expected,actual);}
+
     @Test
     public void testgetAllequipment()
     {
@@ -184,6 +252,25 @@ public class MockitoTest {
         assertEquals("wrong message",expected,actual);
 
     }
+
+    @Test
+    public void testdeleteequipment(){
+        equipment savedequip = new equipment();
+
+        given(equipmentrepository.findById(savedequip.getId())).willReturn(Optional.of(savedequip));
+
+        String expected = "deleted";
+        String actual = cocktailexampleApplication.deleteequipment(savedequip.getId());
+
+        Assertions.assertEquals(expected,actual);
+        verify(equipmentrepository).deleteById(savedequip.getId());
+    }
+
+    @Test
+    public void testdeletenoequipment(){
+        String expected = "no equipment";
+        String actual = cocktailexampleApplication.deleteequipment(anyInt());
+        Assertions.assertEquals(expected,actual);}
     @Test
     public void testgetAllinstructions()
     {
@@ -218,6 +305,25 @@ public class MockitoTest {
     }
 
     @Test
+    public void testdeleteinstruction(){
+        instruction savedinst = new instruction();
+
+        given(instructionrepository.findById(savedinst.getInstructionid())).willReturn(Optional.of(savedinst));
+
+        String expected = "deleted";
+        String actual = cocktailexampleApplication.deleteinstruction(savedinst.getInstructionid());
+
+        Assertions.assertEquals(expected,actual);
+        verify(instructionrepository).deleteById(savedinst.getInstructionid());
+    }
+
+    @Test
+    public void testdeletenoinstruction(){
+        String expected = "no instruction";
+        String actual = cocktailexampleApplication.deleteinstruction(anyInt());
+        Assertions.assertEquals(expected,actual);}
+
+    @Test
     public void testgetAllcocktailinstructions()
     {
         cocktailexampleApplication.getAllcocktailinstructions();
@@ -249,6 +355,25 @@ public class MockitoTest {
         assertEquals("wrong message",expected,actual);
 
     }
+
+    @Test
+    public void testdeletecocktailinstruction(){
+        cocktailinstructions savedci = new cocktailinstructions();
+
+        given(cocktailinstructionsrepository.findById(savedci.getCocktailinstructionsid())).willReturn(Optional.of(savedci));
+
+        String expected = "deleted";
+        String actual = cocktailexampleApplication.deletecocktailinstruction(savedci.getCocktailinstructionsid());
+
+        Assertions.assertEquals(expected,actual);
+        verify(cocktailinstructionsrepository).deleteById(savedci.getCocktailinstructionsid());
+    }
+
+    @Test
+    public void testdeletenococktailinstruction(){
+        String expected = "no cocktail instructions";
+        String actual = cocktailexampleApplication.deletecocktailinstruction(anyInt());
+        Assertions.assertEquals(expected,actual);}
     @Test
     public void testgetAllcocktails()
     {
@@ -277,5 +402,23 @@ public class MockitoTest {
         assertEquals("wrong message",expected,actual);
 
     }
+    @Test
+    public void testdeletecocktail(){
+        cocktail savedc = new cocktail();
+
+        given(cocktailrepository.findById(savedc.getId())).willReturn(Optional.of(savedc));
+
+        String expected = "deleted";
+        String actual = cocktailexampleApplication.deletecocktail(savedc.getId());
+
+        Assertions.assertEquals(expected,actual);
+        verify(cocktailrepository).deleteById(savedc.getId());
+    }
+
+    @Test
+    public void testdeletenococktail(){
+        String expected = "no cocktail";
+        String actual = cocktailexampleApplication.deletecocktail(anyInt());
+        Assertions.assertEquals(expected,actual);}
 
 }

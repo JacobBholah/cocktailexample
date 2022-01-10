@@ -64,27 +64,37 @@ public class CocktailexampleApplication {
 <span class="fc" id="L64">		ingredientrepository.save(savedingredient);</span>
 <span class="fc" id="L65">		return &quot;Saved&quot;;}</span>
 
-	@DeleteMapping(&quot;/deleteingredient&quot;)
-	public String deleteingredient
-			(
-					@RequestParam int ingredientid
-			)
-	{
-<span class="nc" id="L73">		Optional&lt;ingredient&gt; deletedingredient = ingredientrepository.findById(ingredientid);</span>
-<span class="nc bnc" id="L74" title="All 2 branches missed.">		if (deletedingredient.isEmpty()) {</span>
-<span class="nc" id="L75">			return &quot;no ingredient&quot;;</span>
-		}
-<span class="nc" id="L77">		ingredientrepository.delete(deletedingredient.get());</span>
-<span class="nc" id="L78">		return &quot;deleted&quot;;</span>
-	}
 
+//	@DeleteMapping(&quot;/deleteingredient&quot;)
+//	public String deleteingredient
+//			(
+//					@RequestParam int ingredientid
+//			)
+//	{
+//		Optional&lt;ingredient&gt; deletedingredient = ingredientrepository.findById(ingredientid);
+////		if (deletedingredient.isEmpty()) {
+////			return &quot;no ingredient&quot;;
+////		}
+//		ingredientrepository.delete(deletedingredient.get());
+//		return &quot;deleted&quot;;
+//	}
+	@DeleteMapping(value = &quot;/deleteingredient&quot;)
+	public @ResponseBody String deleteingredient(@RequestParam int ingredientid){
+		//ingredientrepository.deleteById(ingredientid);
+<span class="fc" id="L84">		Optional&lt;ingredient&gt; deletedingredient = ingredientrepository.findById(ingredientid);</span>
+<span class="fc bfc" id="L85" title="All 2 branches covered.">		if (deletedingredient.isEmpty()) {</span>
+<span class="fc" id="L86">			return &quot;no ingredient&quot;;</span>
+		}
+<span class="fc" id="L88">		ingredientrepository.deleteById(ingredientid);</span>
+<span class="fc" id="L89">		return &quot;deleted&quot;;</span>
+	}
 
 
 
 
 ///glasses///
 @GetMapping(&quot;/glasses&quot;)
-<span class="fc" id="L87">public @ResponseBody Iterable&lt;glass&gt;getAllglasses(){return glassrepository.findAll();}</span>
+<span class="fc" id="L97">public @ResponseBody Iterable&lt;glass&gt;getAllglasses(){return glassrepository.findAll();}</span>
 
 	@PostMapping(&quot;/addglass&quot;)
 	public @ResponseBody String addAglass
@@ -92,9 +102,9 @@ public class CocktailexampleApplication {
 					@RequestParam String type,
 					@RequestParam int volume
 			){
-<span class="fc" id="L95">		glass savedglass = new glass(type,volume);</span>
-<span class="fc" id="L96">		glassrepository.save(savedglass);</span>
-<span class="fc" id="L97">		return &quot;Saved&quot;;</span>
+<span class="fc" id="L105">		glass savedglass = new glass(type,volume);</span>
+<span class="fc" id="L106">		glassrepository.save(savedglass);</span>
+<span class="fc" id="L107">		return &quot;Saved&quot;;</span>
 	}
 	@DeleteMapping(&quot;/deleteglass&quot;)
 	public String deleteglass
@@ -102,18 +112,19 @@ public class CocktailexampleApplication {
 					@RequestParam int id
 			)
 	{
-<span class="nc" id="L105">		Optional&lt;glass&gt; deletedglass = glassrepository.findById(id);</span>
-<span class="nc bnc" id="L106" title="All 2 branches missed.">		if (deletedglass.isEmpty()) {</span>
-<span class="nc" id="L107">			return &quot;no glass&quot;;</span>
+<span class="fc" id="L115">		Optional&lt;glass&gt; deletedglass = glassrepository.findById(id);</span>
+<span class="fc bfc" id="L116" title="All 2 branches covered.">		if (deletedglass.isEmpty()) {</span>
+<span class="fc" id="L117">			return &quot;no glass&quot;;</span>
 		}
-<span class="nc" id="L109">		glassrepository.delete(deletedglass.get());</span>
-<span class="nc" id="L110">		return &quot;deleted&quot;;</span>
+		//glassrepository.delete(deletedglass.get());
+<span class="fc" id="L120">		glassrepository.deleteById(id);</span>
+<span class="fc" id="L121">		return &quot;deleted&quot;;</span>
 	}
 
 
 	///garnish///
 	@GetMapping(&quot;/garnishes&quot;)
-<span class="fc" id="L116">	public @ResponseBody Iterable&lt;garnish&gt;getAllgarnishs(){return garnishrepository.findAll();}</span>
+<span class="fc" id="L127">	public @ResponseBody Iterable&lt;garnish&gt;getAllgarnishs(){return garnishrepository.findAll();}</span>
 
 	@PostMapping(&quot;/addgarnish&quot;)
 	public @ResponseBody String addAgarnish
@@ -123,9 +134,9 @@ public class CocktailexampleApplication {
 					@RequestParam String type
 
 			){
-<span class="fc" id="L126">		garnish savedgarnish = new garnish(id,name,type);</span>
-<span class="fc" id="L127">		garnishrepository.save(savedgarnish);</span>
-<span class="fc" id="L128">		return &quot;Saved&quot;;</span>
+<span class="fc" id="L137">		garnish savedgarnish = new garnish(id,name,type);</span>
+<span class="fc" id="L138">		garnishrepository.save(savedgarnish);</span>
+<span class="fc" id="L139">		return &quot;Saved&quot;;</span>
 	}
 	@DeleteMapping(&quot;/deletegarnish&quot;)
 	public String deletegarnish
@@ -133,12 +144,13 @@ public class CocktailexampleApplication {
 					@RequestParam int id
 			)
 	{
-<span class="nc" id="L136">		Optional&lt;garnish&gt; deletedgarnish = garnishrepository.findById(id);</span>
-<span class="nc bnc" id="L137" title="All 2 branches missed.">		if (deletedgarnish.isEmpty()) {</span>
-<span class="nc" id="L138">			return &quot;no garnish&quot;;</span>
+<span class="fc" id="L147">		Optional&lt;garnish&gt; deletedgarnish = garnishrepository.findById(id);</span>
+<span class="fc bfc" id="L148" title="All 2 branches covered.">		if (deletedgarnish.isEmpty()) {</span>
+<span class="fc" id="L149">			return &quot;no garnish&quot;;</span>
 		}
-<span class="nc" id="L140">		garnishrepository.delete(deletedgarnish.get());</span>
-<span class="nc" id="L141">		return &quot;deleted&quot;;</span>
+		//garnishrepository.delete(deletedgarnish.get());
+<span class="fc" id="L152">		garnishrepository.deleteById(id);</span>
+<span class="fc" id="L153">		return &quot;deleted&quot;;</span>
 	}
 
 
@@ -147,7 +159,7 @@ public class CocktailexampleApplication {
 
 	///equipment///
 	@GetMapping(&quot;/equipment&quot;)
-<span class="fc" id="L150">	public @ResponseBody Iterable&lt;equipment&gt;getAllequipment(){return equipmentrepository.findAll();}</span>
+<span class="fc" id="L162">	public @ResponseBody Iterable&lt;equipment&gt;getAllequipment(){return equipmentrepository.findAll();}</span>
 
 	@PostMapping(&quot;/addequipment&quot;)
 	public @ResponseBody String addequipment
@@ -156,9 +168,9 @@ public class CocktailexampleApplication {
 					@RequestParam String type
 
 			){
-<span class="fc" id="L159">		equipment savedequipment = new equipment(name,type);</span>
-<span class="fc" id="L160">		equipmentrepository.save(savedequipment);</span>
-<span class="fc" id="L161">		return &quot;Saved&quot;;</span>
+<span class="fc" id="L171">		equipment savedequipment = new equipment(name,type);</span>
+<span class="fc" id="L172">		equipmentrepository.save(savedequipment);</span>
+<span class="fc" id="L173">		return &quot;Saved&quot;;</span>
 	}
 	@DeleteMapping(&quot;/deleteequipment&quot;)
 	public String deleteequipment
@@ -166,14 +178,13 @@ public class CocktailexampleApplication {
 					@RequestParam int id
 			)
 	{
-<span class="nc" id="L169">		Optional&lt;equipment&gt; deletedequipment = equipmentrepository.findById(id);</span>
-<span class="nc bnc" id="L170" title="All 2 branches missed.">		if (deletedequipment.isEmpty()) {</span>
-<span class="nc" id="L171">			return &quot;no equipment&quot;;</span>
+<span class="fc" id="L181">		Optional&lt;equipment&gt; deletedequipment = equipmentrepository.findById(id);</span>
+<span class="fc bfc" id="L182" title="All 2 branches covered.">		if (deletedequipment.isEmpty()) {</span>
+<span class="fc" id="L183">			return &quot;no equipment&quot;;</span>
 		}
-<span class="nc" id="L173">		equipmentrepository.delete(deletedequipment.get());</span>
-<span class="nc" id="L174">		return &quot;deleted&quot;;</span>
+<span class="fc" id="L185">		equipmentrepository.deleteById(id);</span>
+<span class="fc" id="L186">		return &quot;deleted&quot;;</span>
 	}
-
 
 
 
@@ -181,7 +192,7 @@ public class CocktailexampleApplication {
 
 	///instruction///
 	@GetMapping(&quot;/instructions&quot;)
-<span class="fc" id="L184">	public @ResponseBody Iterable&lt;instruction&gt;getAllinstructions(){return instructionrepository.findAll();}</span>
+<span class="fc" id="L195">	public @ResponseBody Iterable&lt;instruction&gt;getAllinstructions(){return instructionrepository.findAll();}</span>
 
 	@PostMapping(&quot;/addinstruction&quot;)
 	public @ResponseBody String addinstruction
@@ -194,9 +205,9 @@ public class CocktailexampleApplication {
 
 
 			){
-<span class="fc" id="L197">		instruction savedinstruction = new instruction(instructionid,description,glass_Type,garnish_Name);</span>
-<span class="fc" id="L198">		instructionrepository.save(savedinstruction);</span>
-<span class="fc" id="L199">		return &quot;Saved&quot;;</span>
+<span class="fc" id="L208">		instruction savedinstruction = new instruction(instructionid,description,glass_Type,garnish_Name);</span>
+<span class="fc" id="L209">		instructionrepository.save(savedinstruction);</span>
+<span class="fc" id="L210">		return &quot;Saved&quot;;</span>
 	}
 	@DeleteMapping(&quot;/deleteinstruction&quot;)
 	public String deleteinstruction
@@ -204,12 +215,12 @@ public class CocktailexampleApplication {
 					@RequestParam int instructionid
 			)
 	{
-<span class="nc" id="L207">		Optional&lt;instruction&gt; deletedinstruction = instructionrepository.findById(instructionid);</span>
-<span class="nc bnc" id="L208" title="All 2 branches missed.">		if (deletedinstruction.isEmpty()) {</span>
-<span class="nc" id="L209">			return &quot;no instruction&quot;;</span>
+<span class="fc" id="L218">		Optional&lt;instruction&gt; deletedinstruction = instructionrepository.findById(instructionid);</span>
+<span class="fc bfc" id="L219" title="All 2 branches covered.">		if (deletedinstruction.isEmpty()) {</span>
+<span class="fc" id="L220">			return &quot;no instruction&quot;;</span>
 		}
-<span class="nc" id="L211">		instructionrepository.delete(deletedinstruction.get());</span>
-<span class="nc" id="L212">		return &quot;deleted&quot;;</span>
+<span class="fc" id="L222">		instructionrepository.deleteById(instructionid);</span>
+<span class="fc" id="L223">		return &quot;deleted&quot;;</span>
 	}
 
 
@@ -219,7 +230,7 @@ public class CocktailexampleApplication {
 
 	///cocktail instructions///
 	@GetMapping(&quot;/cocktailinstructions&quot;)
-<span class="fc" id="L222">	public @ResponseBody Iterable&lt;cocktailinstructions&gt;getAllcocktailinstructions(){return cocktailinstructionsrepository.findAll();}</span>
+<span class="fc" id="L233">	public @ResponseBody Iterable&lt;cocktailinstructions&gt;getAllcocktailinstructions(){return cocktailinstructionsrepository.findAll();}</span>
 
 	@PostMapping(&quot;/addcocktailinstruction&quot;)
 	public @ResponseBody String addcocktailinstruction
@@ -231,9 +242,9 @@ public class CocktailexampleApplication {
 
 
 			){
-<span class="fc" id="L234">		cocktailinstructions savedcocktailinstruction = new cocktailinstructions(cocktailinstructionid,stepnumber,instructionid,cocktail_Name);</span>
-<span class="fc" id="L235">		cocktailinstructionsrepository.save(savedcocktailinstruction);</span>
-<span class="fc" id="L236">		return &quot;Saved&quot;;</span>
+<span class="fc" id="L245">		cocktailinstructions savedcocktailinstruction = new cocktailinstructions(cocktailinstructionid,stepnumber,instructionid,cocktail_Name);</span>
+<span class="fc" id="L246">		cocktailinstructionsrepository.save(savedcocktailinstruction);</span>
+<span class="fc" id="L247">		return &quot;Saved&quot;;</span>
 	}
 	@DeleteMapping(&quot;/deletecocktailinstruction&quot;)
 	public String deletecocktailinstruction
@@ -241,19 +252,19 @@ public class CocktailexampleApplication {
 					@RequestParam int cocktailinstructionsid
 			)
 	{
-<span class="nc" id="L244">		Optional&lt;cocktailinstructions&gt; deletedcocktailinstruction = cocktailinstructionsrepository.findById(cocktailinstructionsid);</span>
-<span class="nc bnc" id="L245" title="All 2 branches missed.">		if (deletedcocktailinstruction.isEmpty()) {</span>
-<span class="nc" id="L246">			return &quot;no cocktail instructions&quot;;</span>
+<span class="fc" id="L255">		Optional&lt;cocktailinstructions&gt; deletedcocktailinstruction = cocktailinstructionsrepository.findById(cocktailinstructionsid);</span>
+<span class="fc bfc" id="L256" title="All 2 branches covered.">		if (deletedcocktailinstruction.isEmpty()) {</span>
+<span class="fc" id="L257">			return &quot;no cocktail instructions&quot;;</span>
 		}
-<span class="nc" id="L248">		cocktailinstructionsrepository.delete(deletedcocktailinstruction.get());</span>
-<span class="nc" id="L249">		return &quot;deleted&quot;;</span>
+<span class="fc" id="L259">		cocktailinstructionsrepository.deleteById(cocktailinstructionsid);</span>
+<span class="fc" id="L260">		return &quot;deleted&quot;;</span>
 	}
 
 
 
 	///cocktail///
 	@GetMapping(&quot;/cocktails&quot;)
-<span class="fc" id="L256">	public @ResponseBody Iterable&lt;cocktail&gt;getAllcocktails(){return cocktailrepository.findAll();}</span>
+<span class="fc" id="L267">	public @ResponseBody Iterable&lt;cocktail&gt;getAllcocktails(){return cocktailrepository.findAll();}</span>
 
 	@PostMapping(&quot;/addcocktail&quot;)
 	public @ResponseBody String addcocktail
@@ -262,21 +273,21 @@ public class CocktailexampleApplication {
 					@RequestParam String type
 
 			){
-<span class="fc" id="L265">		cocktail savedcocktail = new cocktail(name,type);</span>
-<span class="fc" id="L266">		cocktailrepository.save(savedcocktail);</span>
-<span class="fc" id="L267">		return &quot;Saved&quot;;</span>
+<span class="fc" id="L276">		cocktail savedcocktail = new cocktail(name,type);</span>
+<span class="fc" id="L277">		cocktailrepository.save(savedcocktail);</span>
+<span class="fc" id="L278">		return &quot;Saved&quot;;</span>
 	}
 	@DeleteMapping(&quot;/deletecocktail&quot;)
 	public String deletecocktail
 			(
 					@RequestParam int id
 			) {
-<span class="nc" id="L274">		Optional&lt;cocktail&gt; deletedcocktail = cocktailrepository.findById(id);</span>
-<span class="nc bnc" id="L275" title="All 2 branches missed.">		if (deletedcocktail.isEmpty()) {</span>
-<span class="nc" id="L276">			return &quot;no cocktail&quot;;</span>
+<span class="fc" id="L285">		Optional&lt;cocktail&gt; deletedcocktail = cocktailrepository.findById(id);</span>
+<span class="fc bfc" id="L286" title="All 2 branches covered.">		if (deletedcocktail.isEmpty()) {</span>
+<span class="fc" id="L287">			return &quot;no cocktail&quot;;</span>
 		}
-<span class="nc" id="L278">		cocktailrepository.delete(deletedcocktail.get());</span>
-<span class="nc" id="L279">		return &quot;deleted&quot;;</span>
+<span class="fc" id="L289">		cocktailrepository.deleteById(id);</span>
+<span class="fc" id="L290">		return &quot;deleted&quot;;</span>
 	}
 }
 	/*@CrossOrigin(&quot;http://localhost:8080&quot;)

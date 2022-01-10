@@ -9,8 +9,9 @@ import javax.persistence.Id;
 public class equipment {
     @Id
     @GeneratedValue(strategy= GenerationType.TABLE)
-    ///attributes//
     private int id;
+    ///attributes//
+
     private String name;
     private String type;
 
@@ -21,6 +22,8 @@ public class equipment {
     }
     ///methods///
     public equipment(){}
+
+    public int getId() {return id;}
 
     public String getName(){return name;}
     public void setName(String name){this.name=name;}

@@ -10,9 +10,9 @@ public class ingredient {
 
     @Id
     @GeneratedValue(strategy=GenerationType.TABLE)
-
-    ///attributes///
     private int ingredientid;
+    ///attributes///
+
     private String name;
     private String type;
     private int ABV;
@@ -32,20 +32,23 @@ public class ingredient {
 
 <span class="fc" id="L33">    public ingredient(){}</span>
 
-<span class="fc" id="L35">    public String getName(){return name;}</span>
-<span class="fc" id="L36">    public void setName(String name){this.name=name;}</span>
+<span class="fc" id="L35">    public int getIngredientid() {return ingredientid;}</span>
+<span class="nc" id="L36">    public void setIngredientid(int ingredientid) {this.ingredientid = ingredientid;}</span>
 
-<span class="fc" id="L38">    public String getType(){return type;}</span>
-<span class="fc" id="L39">    public void setType(String type){this.type=type;}</span>
+<span class="fc" id="L38">    public String getName(){return name;}</span>
+<span class="fc" id="L39">    public void setName(String name){this.name=name;}</span>
 
-<span class="fc" id="L41">    public int getABV(){return ABV;}</span>
-<span class="fc" id="L42">    public void setABV(int ABV){this.ABV=ABV;}</span>
+<span class="fc" id="L41">    public String getType(){return type;}</span>
+<span class="fc" id="L42">    public void setType(String type){this.type=type;}</span>
 
-<span class="fc" id="L44">    public String getStorage(){return storage;}</span>
-<span class="fc" id="L45">    public void setStorage(String storage){this.storage=storage;}</span>
+<span class="fc" id="L44">    public int getABV(){return ABV;}</span>
+<span class="fc" id="L45">    public void setABV(int ABV){this.ABV=ABV;}</span>
 
-<span class="fc" id="L47">    public String getDescription(){return description;}</span>
-<span class="fc" id="L48">    public void setDescription(String description){this.description=description;}</span>
+<span class="fc" id="L47">    public String getStorage(){return storage;}</span>
+<span class="fc" id="L48">    public void setStorage(String storage){this.storage=storage;}</span>
+
+<span class="fc" id="L50">    public String getDescription(){return description;}</span>
+<span class="fc" id="L51">    public void setDescription(String description){this.description=description;}</span>
 
    /* public String toString() {
         return &quot;ingredientid=&quot;+ ingredientid+

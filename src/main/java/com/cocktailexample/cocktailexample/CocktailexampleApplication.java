@@ -64,20 +64,30 @@ public class CocktailexampleApplication {
 		ingredientrepository.save(savedingredient);
 		return "Saved";}
 
-	@DeleteMapping("/deleteingredient")
-	public String deleteingredient
-			(
-					@RequestParam int ingredientid
-			)
-	{
+
+//	@DeleteMapping("/deleteingredient")
+//	public String deleteingredient
+//			(
+//					@RequestParam int ingredientid
+//			)
+//	{
+//		Optional<ingredient> deletedingredient = ingredientrepository.findById(ingredientid);
+////		if (deletedingredient.isEmpty()) {
+////			return "no ingredient";
+////		}
+//		ingredientrepository.delete(deletedingredient.get());
+//		return "deleted";
+//	}
+	@DeleteMapping(value = "/deleteingredient")
+	public @ResponseBody String deleteingredient(@RequestParam int ingredientid){
+		//ingredientrepository.deleteById(ingredientid);
 		Optional<ingredient> deletedingredient = ingredientrepository.findById(ingredientid);
 		if (deletedingredient.isEmpty()) {
 			return "no ingredient";
 		}
-		ingredientrepository.delete(deletedingredient.get());
+		ingredientrepository.deleteById(ingredientid);
 		return "deleted";
 	}
-
 
 
 
@@ -106,7 +116,8 @@ public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findA
 		if (deletedglass.isEmpty()) {
 			return "no glass";
 		}
-		glassrepository.delete(deletedglass.get());
+		//glassrepository.delete(deletedglass.get());
+		glassrepository.deleteById(id);
 		return "deleted";
 	}
 
@@ -137,7 +148,8 @@ public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findA
 		if (deletedgarnish.isEmpty()) {
 			return "no garnish";
 		}
-		garnishrepository.delete(deletedgarnish.get());
+		//garnishrepository.delete(deletedgarnish.get());
+		garnishrepository.deleteById(id);
 		return "deleted";
 	}
 
@@ -170,10 +182,9 @@ public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findA
 		if (deletedequipment.isEmpty()) {
 			return "no equipment";
 		}
-		equipmentrepository.delete(deletedequipment.get());
+		equipmentrepository.deleteById(id);
 		return "deleted";
 	}
-
 
 
 
@@ -208,7 +219,7 @@ public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findA
 		if (deletedinstruction.isEmpty()) {
 			return "no instruction";
 		}
-		instructionrepository.delete(deletedinstruction.get());
+		instructionrepository.deleteById(instructionid);
 		return "deleted";
 	}
 
@@ -245,7 +256,7 @@ public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findA
 		if (deletedcocktailinstruction.isEmpty()) {
 			return "no cocktail instructions";
 		}
-		cocktailinstructionsrepository.delete(deletedcocktailinstruction.get());
+		cocktailinstructionsrepository.deleteById(cocktailinstructionsid);
 		return "deleted";
 	}
 
@@ -275,7 +286,7 @@ public @ResponseBody Iterable<glass>getAllglasses(){return glassrepository.findA
 		if (deletedcocktail.isEmpty()) {
 			return "no cocktail";
 		}
-		cocktailrepository.delete(deletedcocktail.get());
+		cocktailrepository.deleteById(id);
 		return "deleted";
 	}
 }

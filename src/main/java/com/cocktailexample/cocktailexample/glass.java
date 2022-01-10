@@ -9,8 +9,9 @@ import javax.persistence.Id;
 public class glass {
     @Id
     @GeneratedValue(strategy= GenerationType.TABLE)
-    ///attributes///
     private int id;
+    ///attributes///
+
     private String type;
     private int volume;
 

@@ -10,9 +10,9 @@ public class ingredient {
 
     @Id
     @GeneratedValue(strategy=GenerationType.TABLE)
-
-    ///attributes///
     private int ingredientid;
+    ///attributes///
+
     private String name;
     private String type;
     private int ABV;
@@ -31,6 +31,9 @@ public class ingredient {
     ///methods///
 
     public ingredient(){}
+
+    public int getIngredientid() {return ingredientid;}
+    public void setIngredientid(int ingredientid) {this.ingredientid = ingredientid;}
 
     public String getName(){return name;}
     public void setName(String name){this.name=name;}

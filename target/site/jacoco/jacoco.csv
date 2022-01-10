@@ -1,9 +1,9 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-cocktailexample,com.cocktailexample.cocktailexample,equipment,0,26,0,0,0,9,0,6,0,6
-cocktailexample,com.cocktailexample.cocktailexample,ingredient,0,56,0,0,0,18,0,12,0,12
-cocktailexample,com.cocktailexample.cocktailexample,cocktailinstructions,6,46,0,0,1,19,1,10,1,10
-cocktailexample,com.cocktailexample.cocktailexample,CocktailexampleApplication,138,151,14,0,37,37,15,15,8,15
+cocktailexample,com.cocktailexample.cocktailexample,equipment,0,29,0,0,0,10,0,7,0,7
+cocktailexample,com.cocktailexample.cocktailexample,ingredient,4,59,0,0,1,19,1,13,1,13
+cocktailexample,com.cocktailexample.cocktailexample,cocktailinstructions,6,46,0,0,1,18,1,10,1,10
+cocktailexample,com.cocktailexample.cocktailexample,CocktailexampleApplication,5,277,0,14,2,72,1,29,1,22
 cocktailexample,com.cocktailexample.cocktailexample,garnish,0,36,0,0,0,13,0,8,0,8
-cocktailexample,com.cocktailexample.cocktailexample,cocktail,7,26,0,0,3,11,2,6,2,6
-cocktailexample,com.cocktailexample.cocktailexample,glass,3,26,0,0,1,9,1,6,1,6
+cocktailexample,com.cocktailexample.cocktailexample,cocktail,4,29,0,0,2,12,1,7,1,7
+cocktailexample,com.cocktailexample.cocktailexample,glass,0,29,0,0,0,10,0,7,0,7
 cocktailexample,com.cocktailexample.cocktailexample,instruction,0,46,0,0,0,17,0,10,0,10

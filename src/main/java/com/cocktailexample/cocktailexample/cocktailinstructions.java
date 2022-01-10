@@ -44,9 +44,7 @@ public class cocktailinstructions {
         return cocktailinstructionsid;
     }
 
-    public void setCocktailinstructionsid(int cocktailinstructionsid) {
-        this.cocktailinstructionsid = cocktailinstructionsid;
-    }
+    public void setCocktailinstructionsid(int cocktailinstructionsid) {this.cocktailinstructionsid = cocktailinstructionsid;}
 
     public int getStepnumber() {
         return stepnumber;

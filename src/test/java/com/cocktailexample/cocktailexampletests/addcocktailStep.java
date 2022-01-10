@@ -13,21 +13,15 @@ import static org.junit.Assert.assertEquals;
 public class addcocktailStep {
     private boolean cocktail;
     private boolean name;
+    @When("I try to add the cocktail")
+    public void i_try_to_add_the_cocktail() {
+    }
 
     @Given("the cocktail doesnt exist")
     public void the_cocktail_doesnt_exist() {
         cocktail = false;
     }
 
-
-    @When("I try to add the cocktail")
-    public void i_try_to_add_the_cocktail() {
-    }
-
-    @Then("the cocktail shall appear in the database")
-    public void the_cocktail_shall_appear_in_the_database() {
-        assertEquals(true, cocktail);
-    }
     @Given("a cocktail name is given")
     public void a_cocktail_name_is_given() {
         cocktail=true;
@@ -48,4 +42,8 @@ public class addcocktailStep {
         assertEquals(false, cocktail);
     }
 
+    @Then("the cocktail shall appear in the database")
+    public void the_cocktail_shall_appear_in_the_database() {
+        assertEquals(true, cocktail);
+    }
 }
