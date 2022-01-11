@@ -2,123 +2,123 @@
 <testng-results ignored="0" total="28" passed="28" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-11T17:58:37 GMT" name="Surefire suite" finished-at="2022-01-11T17:58:38 GMT" duration-ms="1012">
+  <suite started-at="2022-01-11T18:03:05 GMT" name="Surefire suite" finished-at="2022-01-11T18:03:06 GMT" duration-ms="1043">
     <groups>
     </groups>
-    <test started-at="2022-01-11T17:58:37 GMT" name="Surefire test" finished-at="2022-01-11T17:58:38 GMT" duration-ms="1012">
+    <test started-at="2022-01-11T18:03:05 GMT" name="Surefire test" finished-at="2022-01-11T18:03:06 GMT" duration-ms="1043">
       <class name="com.cocktailexample.cocktailexampletests.MockitoTest">
-        <test-method signature="testdeletenogarnish()" started-at="2022-01-11T17:58:37 GMT" name="testdeletenogarnish" finished-at="2022-01-11T17:58:38 GMT" duration-ms="651" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testdeletenogarnish -->
-        <test-method signature="testgetAllequipment()" started-at="2022-01-11T17:58:37 GMT" name="testgetAllequipment" finished-at="2022-01-11T17:58:38 GMT" duration-ms="650" status="PASS">
+        <test-method signature="testgetAllequipment()" started-at="2022-01-11T18:03:06 GMT" name="testgetAllequipment" finished-at="2022-01-11T18:03:06 GMT" duration-ms="667" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testgetAllequipment -->
-        <test-method signature="testdeletenoingredient()" started-at="2022-01-11T17:58:37 GMT" name="testdeletenoingredient" finished-at="2022-01-11T17:58:38 GMT" duration-ms="652" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testdeletenoingredient -->
-        <test-method signature="testdeletecocktailinstruction()" started-at="2022-01-11T17:58:37 GMT" name="testdeletecocktailinstruction" finished-at="2022-01-11T17:58:38 GMT" duration-ms="649" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testdeletecocktailinstruction -->
-        <test-method signature="testaddingredient()" started-at="2022-01-11T17:58:37 GMT" name="testaddingredient" finished-at="2022-01-11T17:58:38 GMT" duration-ms="653" status="PASS">
+        <test-method signature="testaddingredient()" started-at="2022-01-11T18:03:06 GMT" name="testaddingredient" finished-at="2022-01-11T18:03:06 GMT" duration-ms="671" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testaddingredient -->
-        <test-method signature="testaddequipment()" started-at="2022-01-11T17:58:37 GMT" name="testaddequipment" finished-at="2022-01-11T17:58:38 GMT" duration-ms="659" status="PASS">
+        <test-method signature="testdeletenoingredient()" started-at="2022-01-11T18:03:06 GMT" name="testdeletenoingredient" finished-at="2022-01-11T18:03:06 GMT" duration-ms="669" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testaddequipment -->
-        <test-method signature="testaddglass()" started-at="2022-01-11T17:58:37 GMT" name="testaddglass" finished-at="2022-01-11T17:58:38 GMT" duration-ms="655" status="PASS">
+        </test-method> <!-- testdeletenoingredient -->
+        <test-method signature="testdeletenogarnish()" started-at="2022-01-11T18:03:06 GMT" name="testdeletenogarnish" finished-at="2022-01-11T18:03:06 GMT" duration-ms="669" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testaddglass -->
-        <test-method signature="testgetAllcocktails()" started-at="2022-01-11T17:58:37 GMT" name="testgetAllcocktails" finished-at="2022-01-11T17:58:38 GMT" duration-ms="657" status="PASS">
+        </test-method> <!-- testdeletenogarnish -->
+        <test-method signature="testdeletecocktailinstruction()" started-at="2022-01-11T18:03:06 GMT" name="testdeletecocktailinstruction" finished-at="2022-01-11T18:03:06 GMT" duration-ms="666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdeletecocktailinstruction -->
+        <test-method signature="testgetAllcocktails()" started-at="2022-01-11T18:03:06 GMT" name="testgetAllcocktails" finished-at="2022-01-11T18:03:06 GMT" duration-ms="676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testgetAllcocktails -->
-        <test-method signature="testdeleteingredient()" started-at="2022-01-11T17:58:37 GMT" name="testdeleteingredient" finished-at="2022-01-11T17:58:38 GMT" duration-ms="663" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testdeleteingredient -->
-        <test-method signature="testgetAllcocktailinstructions()" started-at="2022-01-11T17:58:37 GMT" name="testgetAllcocktailinstructions" finished-at="2022-01-11T17:58:38 GMT" duration-ms="657" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testgetAllcocktailinstructions -->
-        <test-method signature="testaddcocktailinstruction()" started-at="2022-01-11T17:58:37 GMT" name="testaddcocktailinstruction" finished-at="2022-01-11T17:58:38 GMT" duration-ms="656" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testaddcocktailinstruction -->
-        <test-method signature="testdeleteequipment()" started-at="2022-01-11T17:58:37 GMT" name="testdeleteequipment" finished-at="2022-01-11T17:58:38 GMT" duration-ms="665" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testdeleteequipment -->
-        <test-method signature="testgetAllgarnish()" started-at="2022-01-11T17:58:37 GMT" name="testgetAllgarnish" finished-at="2022-01-11T17:58:38 GMT" duration-ms="661" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testgetAllgarnish -->
-        <test-method signature="testgetAllingreients()" started-at="2022-01-11T17:58:37 GMT" name="testgetAllingreients" finished-at="2022-01-11T17:58:38 GMT" duration-ms="662" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testgetAllingreients -->
-        <test-method signature="testdeletenococktail()" started-at="2022-01-11T17:58:37 GMT" name="testdeletenococktail" finished-at="2022-01-11T17:58:38 GMT" duration-ms="665" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testdeletenococktail -->
-        <test-method signature="testgetAllglasses()" started-at="2022-01-11T17:58:37 GMT" name="testgetAllglasses" finished-at="2022-01-11T17:58:38 GMT" duration-ms="664" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testgetAllglasses -->
-        <test-method signature="testdeletenoinstruction()" started-at="2022-01-11T17:58:37 GMT" name="testdeletenoinstruction" finished-at="2022-01-11T17:58:38 GMT" duration-ms="658" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testdeletenoinstruction -->
-        <test-method signature="testdeletenococktailinstruction()" started-at="2022-01-11T17:58:37 GMT" name="testdeletenococktailinstruction" finished-at="2022-01-11T17:58:38 GMT" duration-ms="659" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testdeletenococktailinstruction -->
-        <test-method signature="testdeletegarnish()" started-at="2022-01-11T17:58:37 GMT" name="testdeletegarnish" finished-at="2022-01-11T17:58:38 GMT" duration-ms="654" status="PASS">
+        <test-method signature="testdeletegarnish()" started-at="2022-01-11T18:03:06 GMT" name="testdeletegarnish" finished-at="2022-01-11T18:03:06 GMT" duration-ms="672" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testdeletegarnish -->
-        <test-method signature="testaddcocktail()" started-at="2022-01-11T17:58:37 GMT" name="testaddcocktail" finished-at="2022-01-11T17:58:38 GMT" duration-ms="660" status="PASS">
+        <test-method signature="testdeletenococktail()" started-at="2022-01-11T18:03:06 GMT" name="testdeletenococktail" finished-at="2022-01-11T18:03:06 GMT" duration-ms="684" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testaddcocktail -->
-        <test-method signature="testaddinstruction()" started-at="2022-01-11T17:58:37 GMT" name="testaddinstruction" finished-at="2022-01-11T17:58:38 GMT" duration-ms="653" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testaddinstruction -->
-        <test-method signature="testaddgarnish()" started-at="2022-01-11T17:58:37 GMT" name="testaddgarnish" finished-at="2022-01-11T17:58:38 GMT" duration-ms="669" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testaddgarnish -->
-        <test-method signature="testdeletenoequipment()" started-at="2022-01-11T17:58:37 GMT" name="testdeletenoequipment" finished-at="2022-01-11T17:58:38 GMT" duration-ms="668" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testdeletenoequipment -->
-        <test-method signature="testdeleteinstruction()" started-at="2022-01-11T17:58:37 GMT" name="testdeleteinstruction" finished-at="2022-01-11T17:58:38 GMT" duration-ms="667" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testdeleteinstruction -->
-        <test-method signature="testdeletecocktail()" started-at="2022-01-11T17:58:37 GMT" name="testdeletecocktail" finished-at="2022-01-11T17:58:38 GMT" duration-ms="666" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testdeletecocktail -->
-        <test-method signature="testgetAllinstructions()" started-at="2022-01-11T17:58:37 GMT" name="testgetAllinstructions" finished-at="2022-01-11T17:58:38 GMT" duration-ms="665" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testgetAllinstructions -->
-        <test-method signature="testdeletenoglass()" started-at="2022-01-11T17:58:37 GMT" name="testdeletenoglass" finished-at="2022-01-11T17:58:38 GMT" duration-ms="668" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testdeletenoglass -->
-        <test-method signature="testdeleteglass()" started-at="2022-01-11T17:58:37 GMT" name="testdeleteglass" finished-at="2022-01-11T17:58:38 GMT" duration-ms="665" status="PASS">
+        </test-method> <!-- testdeletenococktail -->
+        <test-method signature="testdeleteglass()" started-at="2022-01-11T18:03:06 GMT" name="testdeleteglass" finished-at="2022-01-11T18:03:06 GMT" duration-ms="686" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testdeleteglass -->
+        <test-method signature="testgetAllinstructions()" started-at="2022-01-11T18:03:06 GMT" name="testgetAllinstructions" finished-at="2022-01-11T18:03:06 GMT" duration-ms="685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetAllinstructions -->
+        <test-method signature="testgetAllglasses()" started-at="2022-01-11T18:03:06 GMT" name="testgetAllglasses" finished-at="2022-01-11T18:03:06 GMT" duration-ms="683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetAllglasses -->
+        <test-method signature="testgetAllcocktailinstructions()" started-at="2022-01-11T18:03:06 GMT" name="testgetAllcocktailinstructions" finished-at="2022-01-11T18:03:06 GMT" duration-ms="675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetAllcocktailinstructions -->
+        <test-method signature="testdeletecocktail()" started-at="2022-01-11T18:03:06 GMT" name="testdeletecocktail" finished-at="2022-01-11T18:03:06 GMT" duration-ms="686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdeletecocktail -->
+        <test-method signature="testgetAllingreients()" started-at="2022-01-11T18:03:06 GMT" name="testgetAllingreients" finished-at="2022-01-11T18:03:06 GMT" duration-ms="681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetAllingreients -->
+        <test-method signature="testaddequipment()" started-at="2022-01-11T18:03:06 GMT" name="testaddequipment" finished-at="2022-01-11T18:03:06 GMT" duration-ms="678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testaddequipment -->
+        <test-method signature="testgetAllgarnish()" started-at="2022-01-11T18:03:06 GMT" name="testgetAllgarnish" finished-at="2022-01-11T18:03:06 GMT" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testgetAllgarnish -->
+        <test-method signature="testaddcocktail()" started-at="2022-01-11T18:03:06 GMT" name="testaddcocktail" finished-at="2022-01-11T18:03:06 GMT" duration-ms="679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testaddcocktail -->
+        <test-method signature="testaddcocktailinstruction()" started-at="2022-01-11T18:03:06 GMT" name="testaddcocktailinstruction" finished-at="2022-01-11T18:03:06 GMT" duration-ms="674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testaddcocktailinstruction -->
+        <test-method signature="testdeleteingredient()" started-at="2022-01-11T18:03:06 GMT" name="testdeleteingredient" finished-at="2022-01-11T18:03:06 GMT" duration-ms="682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdeleteingredient -->
+        <test-method signature="testdeleteequipment()" started-at="2022-01-11T18:03:06 GMT" name="testdeleteequipment" finished-at="2022-01-11T18:03:06 GMT" duration-ms="684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdeleteequipment -->
+        <test-method signature="testaddglass()" started-at="2022-01-11T18:03:06 GMT" name="testaddglass" finished-at="2022-01-11T18:03:06 GMT" duration-ms="673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testaddglass -->
+        <test-method signature="testaddinstruction()" started-at="2022-01-11T18:03:06 GMT" name="testaddinstruction" finished-at="2022-01-11T18:03:06 GMT" duration-ms="671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testaddinstruction -->
+        <test-method signature="testdeletenoinstruction()" started-at="2022-01-11T18:03:06 GMT" name="testdeletenoinstruction" finished-at="2022-01-11T18:03:06 GMT" duration-ms="676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdeletenoinstruction -->
+        <test-method signature="testdeletenococktailinstruction()" started-at="2022-01-11T18:03:06 GMT" name="testdeletenococktailinstruction" finished-at="2022-01-11T18:03:06 GMT" duration-ms="677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdeletenococktailinstruction -->
+        <test-method signature="testdeletenoglass()" started-at="2022-01-11T18:03:06 GMT" name="testdeletenoglass" finished-at="2022-01-11T18:03:06 GMT" duration-ms="687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdeletenoglass -->
+        <test-method signature="testdeletenoequipment()" started-at="2022-01-11T18:03:06 GMT" name="testdeletenoequipment" finished-at="2022-01-11T18:03:06 GMT" duration-ms="687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdeletenoequipment -->
+        <test-method signature="testdeleteinstruction()" started-at="2022-01-11T18:03:06 GMT" name="testdeleteinstruction" finished-at="2022-01-11T18:03:06 GMT" duration-ms="686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdeleteinstruction -->
+        <test-method signature="testaddgarnish()" started-at="2022-01-11T18:03:06 GMT" name="testaddgarnish" finished-at="2022-01-11T18:03:06 GMT" duration-ms="688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testaddgarnish -->
       </class> <!-- com.cocktailexample.cocktailexampletests.MockitoTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
