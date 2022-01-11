@@ -41,9 +41,7 @@ public class addequipmentStep {
     }
 
     @Given("no equipment name is given")
-    public void no_equipment_name_is_given() {
-        equipment = false;
-    }
+    public void no_equipment_name_is_given() {equipment = false;}
 
     @Then("the equipment shall not appear in the database")
     public void the_equipment_shall_not_appear_in_the_database() {

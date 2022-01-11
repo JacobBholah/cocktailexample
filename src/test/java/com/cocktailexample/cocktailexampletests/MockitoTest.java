@@ -5,15 +5,12 @@ import com.cocktailexample.cocktailexample.*;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 
 
 import java.util.Optional;
@@ -29,13 +26,13 @@ public class MockitoTest {
     @InjectMocks
     private CocktailexampleApplication cocktailexampleApplication;
     @Mock
-    ingredientrepository ingredientrepository;
+    com.cocktailexample.cocktailexample.ingredientrepository ingredientrepository;
     @Mock
-    glassrepository glassrepository;
+    com.cocktailexample.cocktailexample.glassrepository glassrepository;
     @Mock
-    garnishrepository garnishrepository;
+    com.cocktailexample.cocktailexample.garnishrepository garnishrepository;
     @Mock
-    equipmentrepository equipmentrepository;
+    com.cocktailexample.cocktailexample.equipmentrepository equipmentrepository;
     @Mock
     instructionrepository instructionrepository;
     @Mock
